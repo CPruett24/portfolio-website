@@ -14,12 +14,19 @@ export default function Home() {
   return (
     <main className="bg-slate-950 text-white">
       <Navbar />
+
       <Hero />
+
       <About />
-      <Projects />
-      <Experience />
+
       <Skills />
+
+      <Projects />
+
+      <Experience />
+
       <Contact />
+
       <Footer />
     </main>
   );
