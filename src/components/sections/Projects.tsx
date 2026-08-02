@@ -1,27 +1,9 @@
-import Card from "../ui/Card";
-import Section from "../ui/Section";
-import SectionHeading from "../ui/SectionHeading";
+import Section from "@/components/ui/Section";
+import SectionHeading from "@/components/ui/SectionHeading";
 
-const projects = [
-  {
-    title: "JARVIS",
-    description:
-      "A personal AI assistant with voice interaction, memory, local LLM integration, and automation capabilities.",
-    stack: "Python • Ollama • SQLite",
-  },
-  {
-    title: "Vehicle AI Diagnostic",
-    description:
-      "AI-powered diagnostic assistant using semantic search and vector embeddings for intelligent troubleshooting.",
-    stack: "Python • Streamlit • FAISS",
-  },
-  {
-    title: "VolunteerHub",
-    description:
-      "Backend API supporting authentication, database design, and role-based access control.",
-    stack: "Flask • SQLAlchemy • JWT",
-  },
-];
+import ProjectCard from "@/components/projects/ProjectCard";
+
+import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
@@ -29,24 +11,18 @@ export default function Projects() {
       <SectionHeading
         eyebrow="Projects"
         title="Featured Projects"
+        subtitle="Some of my favorite software engineering projects."
       />
 
       <div className="grid gap-8 lg:grid-cols-3">
-        {projects.map((project) => (
-          <Card key={project.title}>
-            <h3 className="mb-4 text-2xl font-bold">
-              {project.title}
-            </h3>
-
-            <p className="mb-6 leading-7 text-slate-400">
-              {project.description}
-            </p>
-
-            <p className="text-cyan-400">
-              {project.stack}
-            </p>
-          </Card>
-        ))}
+        {projects
+          .filter((project) => project.featured)
+          .map((project) => (
+            <ProjectCard
+              key={project.slug}
+              project={project}
+            />
+          ))}
       </div>
     </Section>
   );

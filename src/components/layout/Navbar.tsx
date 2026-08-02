@@ -18,7 +18,7 @@ export default function Navbar() {
             href="/"
             className="text-xl font-black tracking-tight"
           >
-            CP
+            Chandler Pruett
           </Link>
 
           <div className="hidden gap-8 md:flex">
