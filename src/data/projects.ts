@@ -1,26 +1,4 @@
-export type Project = {
-  slug: string;
-  title: string;
-  tagline: string;
-
-  shortDescription: string;
-
-  problem: string;
-
-  solution: string;
-
-  challenges: string[];
-
-  futureWork: string[];
-
-  technologies: string[];
-
-  github: string;
-
-  image: string;
-
-  featured: boolean;
-};
+import type { Project } from "@/types/projects";
 
 export const projects: Project[] = [
   {
@@ -31,35 +9,35 @@ export const projects: Project[] = [
     tagline: "Personal AI Assistant",
 
     shortDescription:
-      "A personal AI assistant with voice interaction, local LLMs, memory, and future automation capabilities.",
+      "A personal AI assistant featuring voice interaction, memory, local LLMs, and future automation capabilities.",
 
     problem:
-      "I wanted an AI assistant that could run locally, remember information between sessions, and eventually automate tasks across my computer instead of relying entirely on cloud services.",
+      "Build a personal AI assistant that can run locally, remember information, and automate tasks.",
 
     solution:
-      "I built JARVIS using Python with speech recognition, text-to-speech, SQLite memory storage, and Ollama for local language models. The architecture is modular so additional capabilities can be added without rewriting the core assistant.",
+      "Created a modular Python application using speech recognition, Ollama, SQLite, and text-to-speech.",
 
     challenges: [
-      "Speech recognition reliability",
-      "Managing conversation memory",
-      "Designing modular command routing",
-      "Local LLM integration"
+      "Speech recognition",
+      "Conversation memory",
+      "Command routing",
+      "Local AI integration"
     ],
 
     futureWork: [
-      "Desktop automation",
-      "Vision support",
-      "Calendar integration",
-      "Email integration",
-      "Home server integration"
+        "Desktop automation",
+        "Long-term memory improvements",
+        "Vision and camera support",
+        "Smart home integration",
+        "Email and calendar integration",
+        "Multi-agent architecture"
     ],
 
     technologies: [
       "Python",
       "SQLite",
       "Ollama",
-      "SpeechRecognition",
-      "SQLAlchemy"
+      "SpeechRecognition"
     ],
 
     github: "https://github.com/CPruett24/jarvis-ai-assistant",

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { projects } from "@/data/projects";
+import { projects } from "@/types/projects";
 
 type Props = {
   params: Promise<{
