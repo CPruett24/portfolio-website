@@ -4,6 +4,7 @@ import ProjectHero from "@/components/projects/ProjectHero";
 import ProjectSection from "@/components/projects/ProjectSection";
 import TechStack from "@/components/projects/TechStack";
 import ArchitectureFlow from "@/components/projects/ArchitectureFlow";
+import DecisionCard from "@/components/projects/case-study/DecisionCard";
 
 import { projects } from "@/data/projects";
 
@@ -53,6 +54,18 @@ export default async function ProjectPage({
 
       <ProjectSection title="Technology Stack">
         <TechStack technologies={project.technologies} />
+      </ProjectSection>
+
+      <ProjectSection title="Engineering Decisions">
+        <div className="grid gap-6 md:grid-cols-2">
+          {project.engineeringDecisions.map((decision) => (
+            <DecisionCard
+              key={decision.title}
+              title={decision.title}
+              reason={decision.reason}
+            />
+          ))}
+        </div>
       </ProjectSection>
 
       <ProjectSection title="Challenges">

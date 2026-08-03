@@ -8,7 +8,7 @@ export default function DecisionCard({
   reason,
 }: Props) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-6">
+    <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-6 transition hover:border-cyan-500/40">
       <h3 className="text-xl font-bold text-cyan-400">
         {title}
       </h3>

@@ -64,6 +64,29 @@ export const projects: Project[] = [
         "Iterative development leads to a cleaner architecture."
     ],
 
+    engineeringDecisions: [
+        {
+            title: "Python",
+            reason:
+            "Chosen for rapid development, readability, and the mature ecosystem supporting AI, automation, and speech processing.",
+        },
+        {
+            title: "Ollama",
+            reason:
+            "Running models locally provides privacy, offline capability, and the flexibility to experiment with different LLMs without relying on cloud APIs.",
+        },
+        {
+            title: "SQLite",
+            reason:
+            "SQLite keeps deployment simple for a desktop application while allowing migration to PostgreSQL if multi-user support is added in the future.",
+        },
+        {
+            title: "Modular Architecture",
+            reason:
+            "Separating routing, memory, AI services, and commands keeps the application maintainable and makes new capabilities easy to add.",
+        },
+    ],
+
     github: "https://github.com/CPruett24/jarvis-ai-assistant",
 
     image: "/images/projects/jarvis.png",
@@ -116,6 +139,29 @@ export const projects: Project[] = [
     "Precomputed embeddings dramatically improve application performance.",
     "Separating lookup logic from AI reasoning makes the application easier to extend."
   ],
+
+  engineeringDecisions: [
+        {
+            title: "FAISS",
+            reason:
+            "FAISS was selected to enable fast vector similarity search across thousands of embedded vehicle fault records.",
+        },
+        {
+            title: "Sentence Transformers",
+            reason:
+            "Embeddings allow semantic matching between user symptoms and known vehicle faults instead of relying only on exact keyword matches.",
+        },
+        {
+            title: "Hybrid Search",
+            reason:
+            "Combining exact OBD-II code lookup with semantic search produces more useful diagnostic results than either approach alone.",
+        },
+        {
+            title: "Streamlit",
+            reason:
+            "Streamlit enabled rapid development of an interactive interface for demonstrating AI-powered diagnostics.",
+        },
+    ],
 
   futureWork: [
     "VIN decoding",
@@ -185,6 +231,29 @@ export const projects: Project[] = [
     "JWT authentication provides a scalable security solution.",
     "Separating routes, models, and services improves maintainability."
   ],
+
+  engineeringDecisions: [
+        {
+            title: "Flask",
+            reason:
+            "Flask provides a lightweight backend framework that is easy to extend while keeping the project organized.",
+        },
+        {
+            title: "SQLAlchemy",
+            reason:
+            "SQLAlchemy simplifies database interactions and keeps models maintainable through ORM abstractions.",
+        },
+        {
+            title: "JWT Authentication",
+            reason:
+            "JWT provides stateless authentication that scales well for REST APIs while keeping endpoints secure.",
+        },
+        {
+            title: "Role-Based Authorization",
+            reason:
+            "Separating user permissions by role improves security and makes the backend easier to extend.",
+        },
+    ],
 
   futureWork: [
     "PostgreSQL deployment",

@@ -15,6 +15,11 @@ export type Project = {
 
   lessonsLearned: string[];
 
+  engineeringDecisions: {
+    title: string;
+    reason: string;
+  }[];
+
   futureWork: string[];
 
   technologies: string[];
