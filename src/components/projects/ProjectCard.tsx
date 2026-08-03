@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import Badge from "@/components/ui/Badge";
 import Card from "@/components/ui/Card";
+import ProjectImage from "./ProjectImage";
 
 import type { Project } from "@/types/projects";
 
@@ -14,12 +15,9 @@ export default function ProjectCard({ project }: Props) {
   return (
     <Card>
       <div className="overflow-hidden rounded-2xl border border-white/10">
-        <Image
+        <ProjectImage
           src={project.image}
           alt={project.title}
-          width={1200}
-          height={675}
-          className="aspect-video w-full object-cover transition duration-500 group-hover:scale-105"
         />
       </div>
 
