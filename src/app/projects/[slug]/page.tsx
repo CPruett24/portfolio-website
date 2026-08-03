@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ProjectHero from "@/components/projects/ProjectHero";
 import ProjectSection from "@/components/projects/ProjectSection";
 import TechStack from "@/components/projects/TechStack";
+import ArchitectureFlow from "@/components/projects/ArchitectureFlow";
 
 import { projects } from "@/data/projects";
 
@@ -41,7 +42,9 @@ export default async function ProjectPage({
       </ProjectSection>
 
       <ProjectSection title="Architecture">
-          <BulletList items={project.architecture} />
+          <ArchitectureFlow
+              steps={project.architecture}
+          />
       </ProjectSection>
 
       <ProjectSection title="Key Features">
