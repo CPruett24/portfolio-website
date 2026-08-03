@@ -2,63 +2,47 @@
 
 import Link from "next/link";
 
-import Container from "@/components/ui/Container";
-
-import { navigation } from "@/data/navigation";
+const links = [
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Experience", href: "#experience" },
+  { name: "Contact", href: "#contact" },
+];
 
 export default function Navbar() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
+    <header className="fixed top-6 left-1/2 z-50 w-full max-w-7xl -translate-x-1/2 px-6">
+      <nav className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-900/70 px-8 py-4 shadow-2xl backdrop-blur-xl">
 
-      <Container>
+        <Link
+          href="/"
+          className="text-lg font-bold tracking-tight"
+        >
+          Chandler Pruett
+        </Link>
 
-        <nav className="mt-6 flex h-16 items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-7 backdrop-blur-xl">
-
-          <Link
-            href="/"
-            className="text-xl font-black tracking-tight"
-          >
-            Chandler Pruett
-          </Link>
-
-          <div className="hidden gap-8 md:flex">
-
-            {navigation.map((item) => (
-              <a
-                key={item.title}
-                href={item.href}
-                className="text-sm text-slate-300 transition hover:text-cyan-400"
-              >
-                {item.title}
-              </a>
-            ))}
-
-          </div>
-
-          <div className="flex gap-3">
-
-            <a
-              href="https://github.com/CPruett24"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl border border-white/10 px-4 py-2 text-sm transition hover:border-cyan-400"
+        <div className="hidden items-center gap-8 md:flex">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className="text-sm font-medium text-slate-300 transition hover:text-cyan-400"
             >
-              GitHub
-            </a>
+              {link.name}
+            </Link>
+          ))}
+        </div>
 
-            <a
-              href="#contact"
-              className="rounded-xl bg-cyan-500 px-5 py-2 text-sm font-semibold transition hover:bg-cyan-400"
-            >
-              Contact
-            </a>
+        <a
+          href="/resume.pdf"
+          download
+          className="rounded-lg bg-cyan-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-cyan-400"
+        >
+          Resume
+        </a>
 
-          </div>
-
-        </nav>
-
-      </Container>
-
+      </nav>
     </header>
   );
 }
