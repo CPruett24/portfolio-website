@@ -1,4 +1,6 @@
 import HeroButtons from "./HeroButtons";
+import HeroStats from "./HeroStats";
+import SocialLinks from "./SocialLinks";
 
 export default function HeroContent() {
   return (
@@ -23,7 +25,11 @@ export default function HeroContent() {
         learning new technologies.
       </p>
 
+      <SocialLinks />
+
       <HeroButtons />
+
+      <HeroStats />
     </>
   );
 }
