@@ -2,13 +2,14 @@ import HeroButtons from "./HeroButtons";
 import HeroStats from "./HeroStats";
 import SocialLinks from "./SocialLinks";
 import ProfileCard from "./ProfileCard";
+import { siteConfig } from "@/config/site";
 
 export default function HeroContent() {
   return (
   <div className="grid items-center gap-16 lg:grid-cols-2">
     <div>
       <p className="mb-5 font-semibold uppercase tracking-[0.35em] text-cyan-400">
-        Software Engineer • AI Developer
+        {siteConfig.title}
       </p>
 
       <h1 className="text-5xl font-black leading-tight tracking-tight md:text-7xl lg:text-8xl">
