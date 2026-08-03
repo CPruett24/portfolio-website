@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 
 import ProjectHero from "@/components/projects/ProjectHero";
+import ProjectSection from "@/components/projects/ProjectSection";
+import TechStack from "@/components/projects/TechStack";
 
 import { projects } from "@/data/projects";
 
@@ -24,8 +26,38 @@ export default async function ProjectPage({
   }
 
   return (
-    <main className="mx-auto max-w-6xl px-6 py-24">
+    <main className="mx-auto max-w-5xl px-6 py-24">
+
       <ProjectHero project={project} />
+
+      <ProjectSection title="The Problem">
+        <p>{project.problem}</p>
+      </ProjectSection>
+
+      <ProjectSection title="The Solution">
+        <p>{project.solution}</p>
+      </ProjectSection>
+
+      <ProjectSection title="Technology Stack">
+        <TechStack technologies={project.technologies} />
+      </ProjectSection>
+
+      <ProjectSection title="Challenges">
+        <ul className="list-disc space-y-3 pl-6">
+          {project.challenges.map((challenge) => (
+            <li key={challenge}>{challenge}</li>
+          ))}
+        </ul>
+      </ProjectSection>
+
+      <ProjectSection title="Future Improvements">
+        <ul className="list-disc space-y-3 pl-6">
+          {project.futureWork.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </ProjectSection>
+
     </main>
   );
 }
