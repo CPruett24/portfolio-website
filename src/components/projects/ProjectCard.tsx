@@ -1,50 +1,75 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import Badge from "@/components/ui/Badge";
 import Card from "@/components/ui/Card";
+
 import ProjectImage from "./ProjectImage";
 
 import type { Project } from "@/types/projects";
 
 type Props = {
   project: Project;
+  featured?: boolean;
 };
 
-export default function ProjectCard({ project }: Props) {
+export default function ProjectCard({
+  project,
+  featured = false,
+}: Props) {
   return (
-    <Card>
-      <div className="overflow-hidden rounded-2xl border border-white/10">
-        <ProjectImage
-          src={project.image}
-          alt={project.title}
-        />
-      </div>
+    <Card
+      className={
+        featured
+          ? "overflow-hidden p-8 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center"
+          : "overflow-hidden"
+      }
+    >
+      <ProjectImage
+        src={project.image}
+        alt={project.title}
+      />
 
-      <div className="mt-6">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-400">
-          Featured Project
-        </p>
+      <div className={featured ? "" : "mt-6"}>
 
-        <h3 className="mt-2 text-3xl font-bold">
+        {featured && (
+          <span className="inline-flex rounded-full bg-cyan-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-400">
+            Featured Project
+          </span>
+        )}
+
+        <h3
+          className={
+            featured
+              ? "mt-6 text-5xl font-black tracking-tight"
+              : "mt-2 text-3xl font-bold"
+          }
+        >
           {project.title}
         </h3>
 
-        <p className="mt-1 text-lg text-slate-300">
+        <p
+          className={
+            featured
+              ? "mt-3 text-2xl text-slate-300"
+              : "mt-2 text-lg text-slate-300"
+          }
+        >
           {project.tagline}
         </p>
 
-        <p className="mt-5 leading-8 text-slate-400">
+        <p className="mt-6 leading-8 text-slate-400">
           {project.shortDescription}
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-8 flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
-            <Badge key={tech}>{tech}</Badge>
+            <Badge key={tech}>
+              {tech}
+            </Badge>
           ))}
         </div>
 
-        <div className="mt-8 flex items-center justify-between">
+        <div className="mt-10 flex items-center justify-between">
           <Link
             href={project.github}
             target="_blank"
@@ -60,6 +85,7 @@ export default function ProjectCard({ project }: Props) {
             View Case Study →
           </Link>
         </div>
+
       </div>
     </Card>
   );

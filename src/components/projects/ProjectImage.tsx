@@ -10,21 +10,23 @@ export default function ProjectImage({
   alt,
 }: Props) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-white/10">
+    <div className="group relative overflow-hidden rounded-3xl border border-white/10">
       <Image
         src={src}
         alt={alt}
-        width={1200}
-        height={675}
+        width={1400}
+        height={900}
         className="
           aspect-video
           w-full
           object-cover
           transition-transform
-          duration-500
+          duration-700
           group-hover:scale-105
         "
       />
+
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
     </div>
   );
 }
