@@ -14,8 +14,9 @@ export default function Projects() {
     <Section id="projects">
       <SectionHeading
         eyebrow="Featured Work"
-        title="Projects I'm Proud Of"
-        subtitle="Software engineered through curiosity, iteration, and solving real-world problems."
+        title="Featured Software Projects"
+
+        subtitle="A selection of projects demonstrating AI, backend engineering, machine learning, and modern web development."
       />
 
       {featured && (

@@ -4,10 +4,9 @@ export const projects: Project[] = [
   {
     slug: "jarvis",
     title: "JARVIS",
-    tagline: "Personal AI Assistant",
+    tagline: "Local AI Assistant with Voice Interaction and Long-Term Memory",
 
-    shortDescription:
-      "A modular AI assistant that combines voice interaction, local language models, memory, and automation into a scalable desktop assistant.",
+    shortDescription: "A modular AI assistant built with Python that combines voice recognition, local language models, persistent memory, and an extensible command architecture for intelligent desktop automation.",
 
     problem:
       "I wanted to build an AI assistant that could run locally, remember conversations, and eventually automate everyday tasks instead of relying entirely on cloud services.",
