@@ -39,6 +39,32 @@ export const projects: Project[] = [
       "SpeechRecognition"
     ],
 
+    architecture: [
+    "Voice Input Layer",
+    "Speech Recognition Pipeline",
+    "Command Router",
+    "Memory Service",
+    "SQLite Database",
+    "Ollama Local LLM",
+    "Text-to-Speech Output"
+    ],
+
+    features: [
+        "Voice activation",
+        "Conversation memory",
+        "Local AI inference",
+        "Modular command system",
+        "Persistent SQLite memory",
+        "Expandable architecture"
+    ],
+
+    lessonsLearned: [
+        "Designing modular software makes future features much easier to add.",
+        "Separating memory, routing, and AI services greatly simplified maintenance.",
+        "Local LLMs require different optimization strategies than cloud APIs.",
+        "Iterative development leads to a cleaner architecture."
+    ],
+
     github: "https://github.com/CPruett24/jarvis-ai-assistant",
 
     image: "/images/projects/jarvis.png",
@@ -47,90 +73,140 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "vehicle-ai-diagnostic",
-    title: "Vehicle AI Diagnostic",
-    tagline: "AI Vehicle Troubleshooting Platform",
+  slug: "vehicle-ai-diagnostic",
 
-    shortDescription:
-      "An AI-powered vehicle diagnostic assistant that combines exact OBD-II code lookup with semantic search using vector embeddings to provide intelligent repair guidance.",
+  title: "Vehicle AI Diagnostic",
 
-    problem:
-      "Traditional OBD-II code readers only provide generic fault descriptions. I wanted to build a system capable of understanding symptoms, retrieving relevant failures, and providing more useful diagnostic suggestions.",
+  tagline: "AI Vehicle Troubleshooting Platform",
 
-    solution:
-      "Built a Streamlit application that combines structured OBD-II lookups with semantic similarity search using Sentence Transformers and FAISS. The assistant can retrieve relevant failures from a large dataset and generate more context-aware troubleshooting guidance.",
+  shortDescription:
+    "An AI-powered vehicle diagnostic assistant that combines exact OBD-II code lookup with semantic search using vector embeddings to provide intelligent repair guidance.",
 
-    challenges: [
-      "Generating vector embeddings",
-      "Building an efficient FAISS index",
-      "Combining exact lookup with semantic search",
-      "Organizing large datasets efficiently"
-    ],
+  problem:
+    "Traditional OBD-II scanners provide generic fault descriptions but very little diagnostic reasoning. I wanted to create an assistant capable of understanding both diagnostic codes and user-reported symptoms.",
 
-    futureWork: [
-      "VIN decoding",
-      "Maintenance scheduling",
-      "Live OBD-II scanner integration",
-      "Repair cost estimation",
-      "Multi-vehicle support"
-    ],
+  solution:
+    "Built a Streamlit application that combines exact OBD-II code lookup with semantic similarity search using Sentence Transformers and FAISS to provide more intelligent troubleshooting recommendations.",
 
-    technologies: [
-      "Python",
-      "Streamlit",
-      "FAISS",
-      "Sentence Transformers",
-      "Pandas"
-    ],
+  architecture: [
+    "Streamlit User Interface",
+    "OBD-II Exact Lookup Engine",
+    "Semantic Search Engine",
+    "Sentence Transformer Embeddings",
+    "FAISS Vector Database",
+    "AI Response Layer"
+  ],
 
-    github: "https://github.com/CPruett24/vehicle-ai-diagnostic",
+  features: [
+    "Exact OBD-II code lookup",
+    "Semantic symptom search",
+    "Vector similarity search",
+    "Large fault database",
+    "AI-assisted troubleshooting"
+  ],
 
-    image: "/images/projects/vehicle-ai.png",
+  challenges: [
+    "Generating vector embeddings",
+    "Building an efficient FAISS index",
+    "Combining exact lookup with semantic search",
+    "Managing large datasets efficiently"
+  ],
 
-    featured: true
-  },
+  lessonsLearned: [
+    "Hybrid search provides better results than relying on exact matches alone.",
+    "Precomputed embeddings dramatically improve application performance.",
+    "Separating lookup logic from AI reasoning makes the application easier to extend."
+  ],
+
+  futureWork: [
+    "VIN decoding",
+    "Maintenance scheduling",
+    "Live OBD-II scanner integration",
+    "Repair cost estimation",
+    "Multi-vehicle support"
+  ],
+
+  technologies: [
+    "Python",
+    "Streamlit",
+    "FAISS",
+    "Sentence Transformers",
+    "Pandas"
+  ],
+
+  github: "https://github.com/CPruett24/vehicle-ai-diagnostic",
+
+  image: "/images/projects/vehicle-ai.png",
+
+  featured: true
+},
 
   {
-    slug: "volunteerhub",
-    title: "VolunteerHub",
-    tagline: "Volunteer Management Backend",
+  slug: "volunteerhub",
 
-    shortDescription:
-      "A secure backend API for managing volunteers, organizations, events, authentication, and permissions within a full-stack volunteer management platform.",
+  title: "VolunteerHub",
 
-    problem:
-      "Volunteer organizations often struggle to manage users, events, and permissions efficiently. The project focused on creating a secure and scalable backend to support those needs.",
+  tagline: "Volunteer Management Backend",
 
-    solution:
-      "Designed and implemented RESTful API endpoints, SQLAlchemy database models, JWT authentication, and role-based authorization using Flask. The backend was built with scalability and maintainability in mind.",
+  shortDescription:
+    "A secure backend API for managing volunteers, organizations, events, authentication, and permissions within a volunteer management platform.",
 
-    challenges: [
-      "Database schema design",
-      "Role-based authentication",
-      "REST API architecture",
-      "Backend testing"
-    ],
+  problem:
+    "Volunteer organizations require a secure and scalable backend capable of managing users, events, permissions, and authentication while remaining easy to maintain.",
 
-    futureWork: [
-      "Production PostgreSQL deployment",
-      "Email notifications",
-      "Analytics dashboard",
-      "Admin reporting",
-      "API documentation"
-    ],
+  solution:
+    "Developed a Flask backend with SQLAlchemy models, JWT authentication, RESTful APIs, and role-based authorization to provide a solid backend foundation for the application.",
 
-    technologies: [
-      "Python",
-      "Flask",
-      "SQLAlchemy",
-      "JWT",
-      "SQLite"
-    ],
+  architecture: [
+    "REST API",
+    "Flask Application",
+    "SQLAlchemy ORM",
+    "SQLite Database",
+    "JWT Authentication",
+    "Role-Based Authorization"
+  ],
 
-    github: "#",
+  features: [
+    "User authentication",
+    "Role management",
+    "Volunteer management",
+    "REST API endpoints",
+    "Database relationships"
+  ],
 
-    image: "/images/projects/volunteerhub.png",
+  challenges: [
+    "Database schema design",
+    "Role-based authentication",
+    "REST API architecture",
+    "Backend testing"
+  ],
 
-    featured: true
-  }
+  lessonsLearned: [
+    "Proper database relationships simplify backend development.",
+    "JWT authentication provides a scalable security solution.",
+    "Separating routes, models, and services improves maintainability."
+  ],
+
+  futureWork: [
+    "PostgreSQL deployment",
+    "Email notifications",
+    "Analytics dashboard",
+    "Admin reporting",
+    "OpenAPI documentation"
+  ],
+
+  technologies: [
+    "Python",
+    "Flask",
+    "SQLAlchemy",
+    "JWT",
+    "SQLite"
+  ],
+
+  github: "#",
+
+  image: "/images/projects/volunteerhub.png",
+
+  featured: true
+}
 ];
