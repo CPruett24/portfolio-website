@@ -5,20 +5,14 @@ import HeroContent from "./HeroContent";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden">
-
+    <section className="relative isolate overflow-hidden">
       <HeroBackground />
 
       <Container>
-
-        <div className="relative z-10 py-32">
-
+        <div className="relative z-10 flex min-h-screen items-center py-24">
           <HeroContent />
-
         </div>
-
       </Container>
-
     </section>
   );
 }
