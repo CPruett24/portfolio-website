@@ -17,7 +17,9 @@ export type Project = {
 
   engineeringDecisions: {
     title: string;
-    reason: string;
+    why: string;
+    tradeoffs: string[];
+    usedFor: string[];
   }[];
 
   futureWork: string[];

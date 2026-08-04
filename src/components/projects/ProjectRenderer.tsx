@@ -45,9 +45,11 @@ export default function ProjectRenderer({
         <div className="grid gap-6 md:grid-cols-2">
           {project.engineeringDecisions.map((decision) => (
             <DecisionCard
-              key={decision.title}
-              title={decision.title}
-              reason={decision.reason}
+                key={decision.title}
+                title={decision.title}
+                why={decision.why}
+                tradeoffs={decision.tradeoffs}
+                usedFor={decision.usedFor}
             />
           ))}
         </div>

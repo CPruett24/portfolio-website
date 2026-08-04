@@ -65,26 +65,62 @@ export const projects: Project[] = [
     ],
 
     engineeringDecisions: [
-        {
-            title: "Python",
-            reason:
-            "Chosen for rapid development, readability, and the mature ecosystem supporting AI, automation, and speech processing.",
-        },
-        {
-            title: "Ollama",
-            reason:
-            "Running models locally provides privacy, offline capability, and the flexibility to experiment with different LLMs without relying on cloud APIs.",
-        },
-        {
-            title: "SQLite",
-            reason:
-            "SQLite keeps deployment simple for a desktop application while allowing migration to PostgreSQL if multi-user support is added in the future.",
-        },
-        {
-            title: "Modular Architecture",
-            reason:
-            "Separating routing, memory, AI services, and commands keeps the application maintainable and makes new capabilities easy to add.",
-        },
+    {
+        title: "Sentence Transformers",
+        why:
+        "Sentence Transformers convert user symptoms into semantic embeddings, allowing the system to understand meaning rather than relying on exact keyword matches.",
+        tradeoffs: [
+        "Requires embedding generation and storage",
+        "Produces significantly better semantic search results",
+        ],
+        usedFor: [
+        "Symptom embedding",
+        "Semantic similarity search",
+        "Fault retrieval",
+        ],
+    },
+    {
+        title: "FAISS",
+        why:
+        "FAISS was chosen to perform high-speed vector similarity searches across thousands of embedded vehicle fault records.",
+        tradeoffs: [
+        "Additional preprocessing is required",
+        "Extremely fast search performance",
+        ],
+        usedFor: [
+        "Vector indexing",
+        "Nearest-neighbor search",
+        "Fault retrieval",
+        ],
+    },
+    {
+        title: "Hybrid Search",
+        why:
+        "Combining exact OBD-II code lookup with semantic symptom matching produces more accurate and useful diagnostic recommendations.",
+        tradeoffs: [
+        "More application complexity",
+        "Much higher diagnostic quality",
+        ],
+        usedFor: [
+        "OBD-II lookup",
+        "Semantic reasoning",
+        "AI-assisted diagnostics",
+        ],
+    },
+    {
+        title: "Streamlit",
+        why:
+        "Streamlit enabled rapid development of an interactive interface while allowing the project to focus on AI functionality rather than frontend infrastructure.",
+        tradeoffs: [
+        "Less customizable than React",
+        "Extremely fast development cycle",
+        ],
+        usedFor: [
+        "User interface",
+        "Diagnostic dashboard",
+        "AI interaction",
+        ],
+    },
     ],
 
     github: "https://github.com/CPruett24/jarvis-ai-assistant",
@@ -141,26 +177,62 @@ export const projects: Project[] = [
   ],
 
   engineeringDecisions: [
-        {
-            title: "FAISS",
-            reason:
-            "FAISS was selected to enable fast vector similarity search across thousands of embedded vehicle fault records.",
-        },
-        {
-            title: "Sentence Transformers",
-            reason:
-            "Embeddings allow semantic matching between user symptoms and known vehicle faults instead of relying only on exact keyword matches.",
-        },
-        {
-            title: "Hybrid Search",
-            reason:
-            "Combining exact OBD-II code lookup with semantic search produces more useful diagnostic results than either approach alone.",
-        },
-        {
-            title: "Streamlit",
-            reason:
-            "Streamlit enabled rapid development of an interactive interface for demonstrating AI-powered diagnostics.",
-        },
+    {
+        title: "Flask",
+        why:
+        "Flask provides a lightweight and modular backend framework that makes it easy to organize REST APIs and business logic.",
+        tradeoffs: [
+        "Requires more manual setup than larger frameworks",
+        "Very flexible architecture",
+        ],
+        usedFor: [
+        "REST API",
+        "Request routing",
+        "Backend services",
+        ],
+    },
+    {
+        title: "SQLAlchemy",
+        why:
+        "SQLAlchemy simplifies database interactions through an ORM while keeping models organized and maintainable.",
+        tradeoffs: [
+        "Adds ORM abstraction",
+        "Improves maintainability and portability",
+        ],
+        usedFor: [
+        "Database models",
+        "Relationships",
+        "Queries",
+        ],
+    },
+    {
+        title: "JWT Authentication",
+        why:
+        "JWT enables secure, stateless authentication suitable for REST APIs and scalable client-server applications.",
+        tradeoffs: [
+        "Requires token management",
+        "Scales well without server sessions",
+        ],
+        usedFor: [
+        "Authentication",
+        "API security",
+        "User sessions",
+        ],
+    },
+    {
+        title: "Role-Based Authorization",
+        why:
+        "Separating user permissions by role improves security and allows the application to support different user responsibilities.",
+        tradeoffs: [
+        "Additional authorization logic",
+        "Improved security and scalability",
+        ],
+        usedFor: [
+        "Permission management",
+        "Admin controls",
+        "User access",
+        ],
+    },
     ],
 
   futureWork: [
@@ -233,26 +305,61 @@ export const projects: Project[] = [
   ],
 
   engineeringDecisions: [
-        {
-            title: "Flask",
-            reason:
-            "Flask provides a lightweight backend framework that is easy to extend while keeping the project organized.",
-        },
-        {
-            title: "SQLAlchemy",
-            reason:
-            "SQLAlchemy simplifies database interactions and keeps models maintainable through ORM abstractions.",
-        },
-        {
-            title: "JWT Authentication",
-            reason:
-            "JWT provides stateless authentication that scales well for REST APIs while keeping endpoints secure.",
-        },
-        {
-            title: "Role-Based Authorization",
-            reason:
-            "Separating user permissions by role improves security and makes the backend easier to extend.",
-        },
+    {
+        title: "Python",
+        why:
+        "Chosen for rapid development, readability, and its mature ecosystem for AI, automation, and speech processing.",
+        tradeoffs: [
+        "Slower than compiled languages",
+        "Excellent developer productivity",
+        ],
+        usedFor: [
+        "Voice recognition",
+        "Command routing",
+        "Application orchestration",
+        ],
+    },
+    {
+        title: "Ollama",
+        why:
+        "Provides local language model inference for privacy, offline capability, and experimentation without API costs.",
+        tradeoffs: [
+        "Higher local hardware requirements",
+        "No external API dependency",
+        ],
+        usedFor: [
+        "Conversation generation",
+        "Question answering",
+        "Natural language reasoning",
+        ],
+    },
+    {
+        title: "SQLite",
+        why:
+        "Simple deployment and persistence for a single-user desktop assistant.",
+        tradeoffs: [
+        "Not intended for high-concurrency workloads",
+        "Very lightweight",
+        ],
+        usedFor: [
+        "Persistent memory",
+        "Conversation storage",
+        ],
+    },
+    {
+        title: "Modular Architecture",
+        why:
+        "Keeps AI, memory, routing, and future integrations isolated for easier maintenance.",
+        tradeoffs: [
+        "Slightly more initial complexity",
+        "Much easier long-term expansion",
+        ],
+        usedFor: [
+        "Command routing",
+        "Feature isolation",
+        "Future integrations",
+        ],
+    },
     ],
 
   futureWork: [
