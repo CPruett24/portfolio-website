@@ -2,6 +2,11 @@ export type Project = {
   slug: string;
   title: string;
   tagline: string;
+  
+  projectType: string;
+  role: string;
+  status: string;
+  
   shortDescription: string;
 
   problem: string;

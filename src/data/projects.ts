@@ -5,6 +5,12 @@ export const projects: Project[] = [
     slug: "jarvis",
     title: "JARVIS",
     tagline: "Local AI Assistant with Voice Interaction and Long-Term Memory",
+    
+    projectType: "Personal Project",
+
+    role: "Sole Developer",
+
+    status: "Active Development",
 
     shortDescription: "A modular AI assistant built with Python that combines voice recognition, local language models, persistent memory, and an extensible command architecture for intelligent desktop automation.",
 
@@ -137,6 +143,12 @@ export const projects: Project[] = [
 
   tagline: "AI Vehicle Troubleshooting Platform",
 
+  projectType: "Personal Project",
+
+  role: "Sole Developer",
+
+  status: "Completed",
+
   shortDescription:
     "An AI-powered vehicle diagnostic assistant that combines exact OBD-II code lookup with semantic search using vector embeddings to provide intelligent repair guidance.",
 
@@ -264,6 +276,12 @@ export const projects: Project[] = [
   title: "VolunteerHub",
 
   tagline: "Volunteer Management Backend",
+
+  projectType: "Team Project",
+
+  role: "Backend Developer",
+ 
+  status: "Completed",
 
   shortDescription:
     "A secure backend API for managing volunteers, organizations, events, authentication, and permissions within a volunteer management platform.",
