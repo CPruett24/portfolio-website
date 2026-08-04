@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrowserFrame from "./BrowserFrame";
 
 import type { Project } from "@/types/projects";
 
@@ -37,6 +38,11 @@ export default function ProjectHero({ project }: Props) {
           ← Back to Projects
         </Link>
       </div>
+      
+    <BrowserFrame
+        src={project.image}
+        alt={project.title}
+    />
     </section>
   );
 }
