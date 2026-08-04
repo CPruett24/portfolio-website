@@ -7,6 +7,11 @@ export type Project = {
   role: string;
   status: string;
 
+  metrics: {
+    label: string;
+    value: string;
+  }[];
+
   timeline: {
     title: string;
     description: string;
@@ -17,7 +22,13 @@ export type Project = {
   problem: string;
   solution: string;
 
-  architecture: string[];
+  architecture: {
+    title: string;
+    description: string;
+    responsibilities: string[];
+    technologies: string[];
+    why: string;
+  }[];
 
   features: string[];
 

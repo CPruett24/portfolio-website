@@ -47,15 +47,149 @@ export const projects: Project[] = [
     ],
 
     architecture: [
-      "Voice Input",
-      "Wake Word Detection",
-      "Speech Recognition",
-      "Command Router",
-      "Memory Service",
-      "SQLite Database",
-      "Local LLM (Ollama)",
-      "Response Generation",
-      "Text-to-Speech Output"
+        {
+            title: "Voice Input",
+
+            description:
+            "Captures spoken commands from the user through the microphone.",
+
+            responsibilities: [
+            "Microphone input",
+            "Audio capture",
+            "Speech recording",
+            ],
+
+            technologies: [
+            "SpeechRecognition",
+            "PyAudio",
+            ],
+
+            why:
+            "Provides the primary interface between the user and JARVIS.",
+        },
+
+        {
+            title: "Speech Recognition",
+
+            description:
+            "Converts spoken audio into text that can be processed by the assistant.",
+
+            responsibilities: [
+            "Speech transcription",
+            "Noise handling",
+            "Text generation",
+            ],
+
+            technologies: [
+            "SpeechRecognition",
+            "Google Speech API",
+            ],
+
+            why:
+            "Transforms natural speech into structured input for downstream processing.",
+        },
+
+        {
+            title: "Command Router",
+
+            description:
+            "Determines how every request should be processed and dispatches it to the correct service.",
+
+            responsibilities: [
+            "Intent detection",
+            "Command routing",
+            "Service dispatch",
+            ],
+
+            technologies: [
+            "Python",
+            "Custom routing logic",
+            ],
+
+            why:
+            "Separating routing from implementation keeps the architecture modular and easy to extend.",
+        },
+
+        {
+            title: "Memory Service",
+
+            description:
+            "Stores and retrieves long-term information about previous conversations and user preferences.",
+
+            responsibilities: [
+            "Memory storage",
+            "Memory retrieval",
+            "Context management",
+            ],
+
+            technologies: [
+            "SQLAlchemy",
+            "SQLite",
+            ],
+
+            why:
+            "Persistent memory enables personalized interactions across sessions.",
+        },
+
+        {
+            title: "Ollama Local LLM",
+
+            description:
+            "Runs a local large language model to generate intelligent responses while keeping user data private.",
+
+            responsibilities: [
+            "Reasoning",
+            "Response generation",
+            "Question answering",
+            ],
+
+            technologies: [
+            "Ollama",
+            "Llama 3.1",
+            ],
+
+            why:
+            "Running models locally eliminates cloud dependency and improves privacy.",
+        },
+
+        {
+            title: "Response Generation",
+
+            description:
+            "Combines routing, memory, and AI output into a final response.",
+
+            responsibilities: [
+            "Response assembly",
+            "Formatting",
+            "Conversation flow",
+            ],
+
+            technologies: [
+            "Python",
+            ],
+
+            why:
+            "Centralizing response generation keeps the system consistent and easier to maintain.",
+        },
+
+        {
+            title: "Text-to-Speech",
+
+            description:
+            "Converts generated text back into spoken audio.",
+
+            responsibilities: [
+            "Voice synthesis",
+            "Audio playback",
+            ],
+
+            technologies: [
+            "pyttsx3",
+            ],
+
+            why:
+            "Provides natural conversational interaction for the user.",
+        },
     ],
 
     features: [
@@ -75,6 +209,25 @@ export const projects: Project[] = [
       "SQLAlchemy",
       "Ollama",
       "SpeechRecognition"
+    ],
+
+    metrics: [
+        {
+            label: "Language",
+            value: "Python",
+        },
+        {
+            label: "Architecture",
+            value: "Modular",
+        },
+        {
+            label: "AI",
+            value: "Local LLM",
+        },
+        {
+            label: "Status",
+            value: "Active",
+        },
     ],
 
     engineeringDecisions: [
@@ -233,14 +386,125 @@ export const projects: Project[] = [
     ],
 
     architecture: [
-      "User Input",
-      "Diagnostic Code Parser",
-      "Symptom Processing",
-      "Sentence Transformer Embeddings",
-      "FAISS Vector Search",
-      "Fault Retrieval",
-      "AI Response Generation",
-      "Streamlit Interface"
+        {
+            title: "User Input",
+
+            description:
+            "Accepts either an OBD-II diagnostic code or a natural language description of vehicle symptoms.",
+
+            responsibilities: [
+            "Receive diagnostic codes",
+            "Capture symptom descriptions",
+            "Validate user input",
+            ],
+
+            technologies: [
+            "Streamlit",
+            ],
+
+            why:
+            "Supports both structured and conversational diagnostic workflows.",
+        },
+
+        {
+            title: "Diagnostic Code Parser",
+
+            description:
+            "Determines whether the request contains an exact OBD-II code or requires semantic analysis.",
+
+            responsibilities: [
+            "Parse input",
+            "Identify lookup strategy",
+            "Route requests",
+            ],
+
+            technologies: [
+            "Python",
+            ],
+
+            why:
+            "Separates deterministic code lookups from AI-powered searches.",
+        },
+
+        {
+            title: "Sentence Transformer",
+
+            description:
+            "Converts symptom descriptions into dense vector embeddings for semantic comparison.",
+
+            responsibilities: [
+            "Generate embeddings",
+            "Encode semantics",
+            "Prepare vector search",
+            ],
+
+            technologies: [
+            "Sentence Transformers",
+            ],
+
+            why:
+            "Allows the system to understand meaning instead of matching keywords.",
+        },
+
+        {
+            title: "FAISS Vector Search",
+
+            description:
+            "Searches the embedded vehicle fault database for the closest semantic matches.",
+
+            responsibilities: [
+            "Nearest-neighbor search",
+            "Similarity ranking",
+            "Fault retrieval",
+            ],
+
+            technologies: [
+            "FAISS",
+            ],
+
+            why:
+            "Provides extremely fast semantic retrieval across thousands of records.",
+        },
+
+        {
+            title: "AI Response Generation",
+
+            description:
+            "Combines retrieved diagnostic information into a readable troubleshooting response.",
+
+            responsibilities: [
+            "Generate recommendations",
+            "Summarize findings",
+            "Present repair guidance",
+            ],
+
+            technologies: [
+            "Python",
+            ],
+
+            why:
+            "Transforms retrieved information into actionable guidance.",
+        },
+
+        {
+            title: "Streamlit Dashboard",
+
+            description:
+            "Displays diagnostic results through an interactive web interface.",
+
+            responsibilities: [
+            "Render interface",
+            "Display recommendations",
+            "User interaction",
+            ],
+
+            technologies: [
+            "Streamlit",
+            ],
+
+            why:
+            "Provides an intuitive interface for interacting with the diagnostic engine.",
+        },
     ],
 
     features: [
@@ -259,6 +523,25 @@ export const projects: Project[] = [
       "Sentence Transformers",
       "FAISS",
       "Pandas"
+    ],
+
+    metrics: [
+        {
+            label: "Dataset",
+            value: "50,000+ Fault Records",
+        },
+        {
+            label: "Search",
+            value: "Hybrid AI",
+        },
+        {
+            label: "Embeddings",
+            value: "Sentence Transformers",
+        },
+        {
+            label: "Vector DB",
+            value: "FAISS",
+        },
     ],
 
     engineeringDecisions: [
@@ -418,13 +701,129 @@ export const projects: Project[] = [
     ],
 
     architecture: [
-      "Client Requests",
-      "REST API",
-      "Authentication Middleware",
-      "Authorization Layer",
-      "Business Logic",
-      "SQLAlchemy ORM",
-      "SQLite Database"
+        {
+            title: "Client Requests",
+
+            description:
+            "Receives requests from the frontend application and routes them to the backend API.",
+
+            responsibilities: [
+            "Receive requests",
+            "Validate endpoints",
+            "Forward API calls",
+            ],
+
+            technologies: [
+            "HTTP",
+            "REST",
+            ],
+
+            why:
+            "Acts as the communication layer between the frontend and backend.",
+        },
+
+        {
+            title: "REST API",
+
+            description:
+            "Processes incoming requests and routes them to the appropriate backend service.",
+
+            responsibilities: [
+            "Route requests",
+            "Validate input",
+            "Return responses",
+            ],
+
+            technologies: [
+            "Flask",
+            ],
+
+            why:
+            "Provides a consistent interface for frontend communication.",
+        },
+
+        {
+            title: "Authentication",
+
+            description:
+            "Verifies user identity before allowing access to protected resources.",
+
+            responsibilities: [
+            "Validate credentials",
+            "Issue JWT tokens",
+            "Protect endpoints",
+            ],
+
+            technologies: [
+            "JWT",
+            ],
+
+            why:
+            "Ensures only authenticated users can access secured resources.",
+        },
+
+        {
+            title: "Authorization",
+
+            description:
+            "Determines whether an authenticated user has permission to perform a requested action.",
+
+            responsibilities: [
+            "Role validation",
+            "Permission checks",
+            "Access control",
+            ],
+
+            technologies: [
+            "JWT",
+            "Python",
+            ],
+
+            why:
+            "Protects sensitive application functionality using role-based access.",
+        },
+
+        {
+            title: "Business Logic",
+
+            description:
+            "Executes application rules for volunteers, organizations, and events.",
+
+            responsibilities: [
+            "Process requests",
+            "Apply business rules",
+            "Coordinate services",
+            ],
+
+            technologies: [
+            "Python",
+            "Flask",
+            ],
+
+            why:
+            "Separates application logic from routing and persistence.",
+        },
+
+        {
+            title: "Database Layer",
+
+            description:
+            "Persists and retrieves application data using SQLAlchemy models.",
+
+            responsibilities: [
+            "CRUD operations",
+            "Relationship management",
+            "Database queries",
+            ],
+
+            technologies: [
+            "SQLAlchemy",
+            "SQLite",
+            ],
+
+            why:
+            "Provides reliable, maintainable data persistence.",
+        },
     ],
 
     features: [
@@ -444,6 +843,25 @@ export const projects: Project[] = [
       "SQLAlchemy",
       "SQLite",
       "JWT"
+    ],
+
+    metrics: [
+        {
+            label: "Role",
+            value: "Backend",
+        },
+        {
+            label: "Architecture",
+            value: "REST API",
+        },
+        {
+            label: "Authentication",
+            value: "JWT",
+        },
+        {
+            label: "Project",
+            value: "Team",
+        },
     ],
 
     engineeringDecisions: [

@@ -1,14 +1,19 @@
 type Props = {
+  id: string;
   title: string;
   children: React.ReactNode;
 };
 
 export default function ProjectSection({
+  id,
   title,
   children,
 }: Props) {
   return (
-    <section className="mt-20">
+    <section
+      id={id}
+      className="scroll-mt-28 mt-20"
+    >
       <h2 className="mb-6 text-3xl font-bold">
         {title}
       </h2>

@@ -1,13 +1,15 @@
 import { siteConfig } from "@/config/site";
 
 import HeroButtons from "./HeroButtons";
-import HeroStats from "./HeroStats";
-import ProfileCard from "./ProfileCard";
+import DeveloperDashboard from "./DeveloperDashboard";
 import SocialLinks from "./SocialLinks";
+import HeroSkills from "./HeroSkills";
 
 export default function HeroContent() {
   return (
-    <div className="grid items-center gap-20 lg:grid-cols-2">
+    <div className="grid items-center gap-20 lg:grid-cols-[1.15fr_0.85fr]">
+
+      {/* Left */}
 
       <div>
 
@@ -15,7 +17,7 @@ export default function HeroContent() {
           {siteConfig.title}
         </p>
 
-        <h1 className="text-5xl font-black leading-[1.05] tracking-tight md:text-7xl lg:text-8xl">
+        <h1 className="text-5xl font-black leading-[1.02] tracking-tight md:text-7xl lg:text-8xl">
           Building
           <span className="text-cyan-400"> AI-Powered </span>
           Software
@@ -25,29 +27,41 @@ export default function HeroContent() {
           Real Problems.
         </h1>
 
-        <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-400">
-          Computer Science senior specializing in artificial intelligence,
-          backend engineering, and scalable software systems.
+        <p className="mt-10 max-w-2xl text-xl leading-9 text-slate-400">
+          I build intelligent software that combines artificial intelligence,
+          scalable backend systems, and thoughtful software architecture.
 
           <br />
           <br />
 
-          Currently developing AI assistants, semantic search platforms,
-          and modern web applications while pursuing a career in Software
-          Engineering.
+          My work focuses on creating practical AI applications—from local
+          language model assistants and semantic search platforms to secure
+          full-stack web applications.
+
+
+          <br />
+          <br />
+
+          I'm currently developing <span className="font-semibold text-white">JARVIS</span>,
+          a modular AI assistant exploring voice interaction, persistent memory,
+          intelligent automation, and future computer vision capabilities.
         </p>
 
-        <SocialLinks />
+        <div className="mt-8">
+          <SocialLinks />
+        </div>
 
-        <div className="mt-10">
+        <div className="mt-12">
           <HeroButtons />
         </div>
 
-        <HeroStats />
+        <HeroSkills />
 
       </div>
 
-      <ProfileCard />
+      {/* Right */}
+
+      <DeveloperDashboard />
 
     </div>
   );

@@ -8,7 +8,7 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    year: "2023",
+    year: "2023-2024",
     title: "Assembler",
     company: "Contec, Inc.",
     description:
@@ -23,11 +23,11 @@ export const experiences: Experience[] = [
   },
 
   {
-    year: "2025",
-    title: "Software Engineering Intern",
+    year: "2026",
+    title: "Summer Intern",
     company: "Contec, Inc.",
     description:
-      "Worked on internal software projects while applying software engineering principles, collaborating with developers, and gaining experience with real-world development workflows.",
+      "Continued work in assembly and testing of industrial computer systems as well as learned the use of software to troubleshoot and diagnose issues.",
 
     technologies: [
       "Python",
@@ -38,8 +38,8 @@ export const experiences: Experience[] = [
   },
 
   {
-    year: "2026",
-    title: "Computer Science Senior",
+    year: "2024-2026",
+    title: "Computer Science Student",
     company: "University",
 
     description:
