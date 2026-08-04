@@ -6,6 +6,11 @@ export type Project = {
   projectType: string;
   role: string;
   status: string;
+
+  timeline: {
+    title: string;
+    description: string;
+  }[];
   
   shortDescription: string;
 

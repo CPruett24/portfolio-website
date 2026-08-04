@@ -5,6 +5,7 @@ import ArchitectureFlow from "./ArchitectureFlow";
 import BulletList from "./BulletList";
 import DecisionCard from "./case-study/DecisionCard";
 import ProjectOverview from "./ProjectOverview";
+import Timeline from "./Timeline";
 
 import type { Project } from "@/types/projects";
 
@@ -20,6 +21,7 @@ export default function ProjectRenderer({
 
       <ProjectHero project={project} />
       <ProjectOverview project={project} />
+      <Timeline project={project} />
 
       <ProjectSection title="The Problem">
         <p>{project.problem}</p>

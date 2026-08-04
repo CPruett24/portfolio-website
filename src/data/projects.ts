@@ -20,6 +20,25 @@ export const projects: Project[] = [
     solution:
       "Developed a modular Python application using speech recognition, text-to-speech, SQLite memory, and Ollama for local LLM inference. The architecture is designed to support future integrations such as vision, desktop automation, and smart home control.",
 
+    timeline: [
+        {
+            title: "Project Started",
+            description: "Created the initial voice assistant with speech recognition and text-to-speech.",
+        },
+        {
+            title: "Persistent Memory",
+            description: "Implemented SQLite and SQLAlchemy to remember information between sessions.",
+        },
+        {
+            title: "Local AI",
+            description: "Integrated Ollama to provide private local language model inference.",
+        },
+        {
+            title: "Current Development",
+            description: "Expanding toward desktop automation, vision, and intelligent workflows.",
+        },
+    ],
+
     challenges: [
       "Improving speech recognition accuracy",
       "Designing a scalable command router",
@@ -158,6 +177,25 @@ export const projects: Project[] = [
   solution:
     "Built a Streamlit application that combines exact OBD-II code lookup with semantic similarity search using Sentence Transformers and FAISS to provide more intelligent troubleshooting recommendations.",
 
+  timeline: [
+        {
+            title: "Dataset Collection",
+            description: "Prepared structured OBD-II code and vehicle fault datasets.",
+        },
+        {
+            title: "Semantic Search",
+            description: "Generated embeddings and built a FAISS index for vector search.",
+        },
+        {
+            title: "Hybrid Diagnostics",
+            description: "Combined exact code lookup with semantic similarity search.",
+        },
+        {
+            title: "Completed",
+            description: "Delivered an AI-powered diagnostic assistant with an interactive Streamlit interface.",
+        },
+    ],
+
   architecture: [
     "Streamlit User Interface",
     "OBD-II Exact Lookup Engine",
@@ -291,6 +329,25 @@ export const projects: Project[] = [
 
   solution:
     "Developed a Flask backend with SQLAlchemy models, JWT authentication, RESTful APIs, and role-based authorization to provide a solid backend foundation for the application.",
+
+  timeline: [
+        {
+            title: "Project Planning",
+            description: "Collaborated with the team to define backend requirements and API responsibilities.",
+        },
+        {
+            title: "Backend Development",
+            description: "Designed the database schema, implemented REST APIs, and added authentication and authorization.",
+        },
+        {
+            title: "Frontend Integration",
+            description: "Worked with teammates to support frontend integration through the backend API.",
+        },
+        {
+            title: "Project Completion",
+            description: "Delivered the backend as part of the completed team project.",
+        },
+    ],
 
   architecture: [
     "REST API",
