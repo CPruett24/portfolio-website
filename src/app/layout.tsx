@@ -134,11 +134,9 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
-        <body className="min-h-full flex flex-col">
-          <StructuredData />
 
-          {children}
-        </body>
+        <StructuredData />
+
         {children}
 
       </body>
