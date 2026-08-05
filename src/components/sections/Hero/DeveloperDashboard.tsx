@@ -28,7 +28,10 @@ export default function DeveloperDashboard() {
               Software Engineer
             </p>
 
-            <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-300">
+            <div
+              aria-label="Currently building JARVIS"
+              className="mt-5 inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-300"
+            >
               <div className="h-2.5 w-2.5 rounded-full bg-emerald-400 animate-pulse" />
               Building JARVIS
             </div>

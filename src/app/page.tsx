@@ -12,22 +12,28 @@ import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-slate-950 text-white">
+    <>
       <Navbar />
 
-      <Hero />
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="bg-slate-950 text-white focus:outline-none"
+      >
+        <Hero />
 
-      <Projects />
+        <Projects />
 
-      <About />
+        <About />
 
-      <Experience />
+        <Experience />
 
-      <Skills />
+        <Skills />
 
-      <Contact />
+        <Contact />
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }

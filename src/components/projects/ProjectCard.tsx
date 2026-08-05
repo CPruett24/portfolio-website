@@ -25,8 +25,8 @@ export default function ProjectCard({
       }
     >
       <ProjectImage
-        src={project.image}
-        alt={project.title}
+          src={project.image}
+          alt={`Screenshot of the ${project.title} project`}
       />
 
       <div className={featured ? "" : "mt-6"}>

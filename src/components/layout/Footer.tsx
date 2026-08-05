@@ -17,7 +17,7 @@ export default function Footer() {
               {siteConfig.name}
             </h2>
 
-            <p className="mt-6 max-w-xl leading-8 text-slate-400">
+            <p className="mt-6 max-w-xl leading-8 text-slate-300">
               Building intelligent software through artificial intelligence,
               backend engineering, and modern web technologies.
             </p>
@@ -62,11 +62,11 @@ export default function Footer() {
 
             <BackToTop />
 
-            <p className="mt-10 text-right text-sm text-slate-500">
+            <p className="mt-10 text-right text-sm text-slate-300">
               Built with Next.js, React, TypeScript, and Tailwind CSS.
             </p>
 
-            <p className="mt-2 text-right text-sm text-slate-500">
+            <p className="mt-2 text-right text-sm text-slate-300">
               © {year} {siteConfig.name}. All rights reserved.
             </p>
 

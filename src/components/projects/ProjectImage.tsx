@@ -16,6 +16,7 @@ export default function ProjectImage({
         alt={alt}
         width={1400}
         height={900}
+        sizes="(max-width:768px) 100vw, 50vw"
         className="
           aspect-video
           w-full
