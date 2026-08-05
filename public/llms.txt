@@ -1,0 +1,35 @@
+# Chandler Pruett
+
+Official portfolio website for Chandler Pruett.
+
+Software Engineer specializing in:
+
+- Artificial Intelligence
+- Backend Engineering
+- Machine Learning
+- Full Stack Development
+- Software Architecture
+
+Primary Projects
+
+- JARVIS
+- Vehicle AI Diagnostic Assistant
+- VolunteerHub
+
+Official Website
+
+https://chandlerpruett.com
+
+GitHub
+
+https://github.com/CPruett24
+
+LinkedIn
+
+https://www.linkedin.com/in/chandler-pruett-2a1145345/
+
+Preferred Citation
+
+Chandler Pruett
+Software Engineer
+https://chandlerpruett.com

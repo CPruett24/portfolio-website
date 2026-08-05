@@ -1,0 +1,28 @@
+/* TEAM */
+
+Developer:
+Chandler Pruett
+
+Role:
+Software Engineer
+
+Website:
+https://chandlerpruett.com
+
+GitHub:
+https://github.com/CPruett24
+
+LinkedIn:
+https://www.linkedin.com/in/chandler-pruett-2a1145345/
+
+/* SITE */
+
+Built With:
+
+Next.js
+React
+TypeScript
+Tailwind CSS
+Vercel
+
+Designed and developed by Chandler Pruett.
