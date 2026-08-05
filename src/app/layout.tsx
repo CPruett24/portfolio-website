@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://YOUR-DOMAIN.com"),
+  metadataBase: new URL("https://chandlerpruett.com"),
 
   title: {
     default: "Chandler Pruett | Software Engineer",
@@ -21,43 +21,81 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Software Engineer specializing in artificial intelligence, backend engineering, scalable software architecture, and modern web applications.",
+    "Software Engineer specializing in Artificial Intelligence, Backend Development, Machine Learning, and scalable software systems. Creator of JARVIS, AI-powered applications, and modern full-stack software.",
 
   keywords: [
+    "Chandler Pruett",
     "Software Engineer",
     "Artificial Intelligence",
-    "Backend Developer",
+    "Machine Learning",
     "Python",
     "Next.js",
-    "Portfolio",
-    "Machine Learning",
-    "Software Architecture",
+    "React",
+    "TypeScript",
+    "Backend Development",
     "Flask",
     "SQL",
+    "JARVIS",
+    "Portfolio",
   ],
 
   authors: [
     {
       name: "Chandler Pruett",
+      url: "https://chandlerpruett.com",
     },
   ],
 
   creator: "Chandler Pruett",
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
-    title: "Chandler Pruett | Software Engineer",
-    description:
-      "Portfolio showcasing AI systems, backend engineering, and software architecture.",
     type: "website",
     locale: "en_US",
-    siteName: "Chandler Pruett Portfolio",
+    url: "https://chandlerpruett.com",
+
+    siteName: "Chandler Pruett",
+
+    title: "Chandler Pruett | Software Engineer",
+
+    description:
+      "Software Engineer specializing in Artificial Intelligence, Backend Development, and scalable software architecture.",
+
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Chandler Pruett Portfolio",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
+
     title: "Chandler Pruett | Software Engineer",
+
     description:
-      "Portfolio showcasing AI systems, backend engineering, and software architecture.",
+      "Software Engineer specializing in AI, Backend Engineering, and modern software systems.",
+
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
