@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 
 export default function HeroButtons() {
   return (
-    <div className="mt-12 flex flex-wrap gap-4">
+    <div className="mt-10 flex flex-wrap gap-4">
       <Link href="#projects">
         <Button>
           View My Work

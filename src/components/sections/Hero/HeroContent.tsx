@@ -3,11 +3,11 @@ import { siteConfig } from "@/config/site";
 import HeroButtons from "./HeroButtons";
 import DeveloperDashboard from "./DeveloperDashboard";
 import SocialLinks from "./SocialLinks";
-import HeroSkills from "./HeroSkills";
+import HeroHighlights from "./HeroHighlights";
 
 export default function HeroContent() {
   return (
-    <div className="grid items-center gap-20 lg:grid-cols-[1.15fr_0.85fr]">
+    <div className="grid items-center gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
 
       {/* Left */}
 
@@ -17,7 +17,7 @@ export default function HeroContent() {
           {siteConfig.title}
         </p>
 
-        <h1 className="text-5xl font-black leading-[1.02] tracking-tight md:text-7xl lg:text-8xl">
+        <h1 className="text-5xl font-black leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl">
           Building
           <span className="text-cyan-400"> AI-Powered </span>
           Software
@@ -27,24 +27,26 @@ export default function HeroContent() {
           Real Problems.
         </h1>
 
-        <p className="mt-10 max-w-2xl text-xl leading-9 text-slate-400">
+        <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-400 sm:text-xl sm:leading-9">
           I build intelligent software that combines artificial intelligence,
-          scalable backend systems, and thoughtful software architecture.
+          scalable backend systems, and clean software architecture.
 
           <br />
           <br />
 
-          My work focuses on creating practical AI applications—from local
-          language model assistants and semantic search platforms to secure
-          full-stack web applications.
-
+          My projects focus on solving real-world problems through local AI,
+          semantic search, modern web applications, and thoughtful engineering.
 
           <br />
           <br />
 
-          I'm currently developing <span className="font-semibold text-white">JARVIS</span>,
-          a modular AI assistant exploring voice interaction, persistent memory,
-          intelligent automation, and future computer vision capabilities.
+          Currently building{" "}
+          <span className="font-semibold text-white">
+            JARVIS
+          </span>
+          , a modular AI assistant exploring voice interaction,
+          persistent memory, intelligent automation,
+          and future computer vision.
         </p>
 
         <div className="mt-8">
@@ -55,7 +57,7 @@ export default function HeroContent() {
           <HeroButtons />
         </div>
 
-        <HeroSkills />
+        <HeroHighlights />
 
       </div>
 

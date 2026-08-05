@@ -2,34 +2,35 @@ import Image from "next/image";
 
 export default function DeveloperDashboard() {
   return (
-    <div className="hidden lg:block">
+    <div className="mt-16 w-full lg:mt-0">
 
       <div className="overflow-hidden rounded-[32px] border border-white/10 bg-slate-900/70 shadow-[0_30px_100px_rgba(6,182,212,0.18)] backdrop-blur-xl">
 
         {/* Header */}
 
-        <div className="border-b border-white/10 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 px-8 py-6">
+        <div className="border-b border-white/10 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 px-8 py-8">
 
-          <div className="flex items-center gap-5">
+          <div className="flex flex-col items-center text-center">
 
             <Image
               src="/images/profile/profile-placeholder.png"
-              alt="Profile"
-              width={90}
-              height={90}
-              className="rounded-2xl border border-cyan-500/30"
+              alt="Portrait of Chandler Pruett"
+              width={110}
+              height={110}
+              className="rounded-3xl border border-cyan-500/30 shadow-lg"
             />
 
-            <div>
+            <h2 className="mt-5 text-3xl font-bold">
+              Chandler Pruett
+            </h2>
 
-              <h2 className="text-2xl font-bold">
-                Chandler Pruett
-              </h2>
+            <p className="mt-1 text-slate-400">
+              Software Engineer
+            </p>
 
-              <p className="mt-1 text-slate-400">
-                Software Engineer
-              </p>
-
+            <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-300">
+              <div className="h-2.5 w-2.5 rounded-full bg-emerald-400 animate-pulse" />
+              Building JARVIS
             </div>
 
           </div>
@@ -38,27 +39,7 @@ export default function DeveloperDashboard() {
 
         {/* Body */}
 
-        <div className="space-y-8 p-8">
-
-          {/* Status */}
-
-          <div>
-
-            <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
-              Current Status
-            </p>
-
-            <div className="mt-3 flex items-center gap-3">
-
-              <div className="h-3 w-3 rounded-full bg-emerald-400 animate-pulse" />
-
-              <span className="font-semibold text-emerald-300">
-                Building JARVIS
-              </span>
-
-            </div>
-
-          </div>
+        <div className="space-y-10 p-7 sm:p-8">
 
           {/* Focus */}
 
@@ -114,7 +95,7 @@ export default function DeveloperDashboard() {
 
           {/* Tech */}
 
-          <div>
+          <div className="hidden lg:block">
 
             <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
               Core Technologies
@@ -144,7 +125,7 @@ export default function DeveloperDashboard() {
 
           {/* Availability */}
 
-          <div>
+          <div className="hidden lg:block">
 
             <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
               Availability

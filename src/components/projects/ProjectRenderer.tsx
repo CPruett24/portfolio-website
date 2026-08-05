@@ -1,7 +1,7 @@
 import ProjectHero from "./ProjectHero";
 import ProjectSection from "./ProjectSection";
 import TechStack from "./TechStack";
-import ArchitectureExplorer from "./SystemExplorer";
+import SystemExplorer from "./SystemExplorer";
 import BulletList from "./BulletList";
 import DecisionCard from "./case-study/DecisionCard";
 import ProjectOverview from "./ProjectOverview";
@@ -54,7 +54,7 @@ export default function ProjectRenderer({
             id="architecture"
             title="System Architecture"
         >
-            <ArchitectureExplorer
+            <SystemExplorer
                 project={project}
             />
         </ProjectSection>
