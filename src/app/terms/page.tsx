@@ -14,7 +14,7 @@ export default function TermsPage() {
       </h1>
 
       <p className="mt-4 text-slate-400">
-        Effective Date: {new Date().toLocaleDateString()}
+        Effective Date: August 6, 2026
       </p>
 
       <div className="mt-10 space-y-10 leading-8">
@@ -25,9 +25,9 @@ export default function TermsPage() {
           </h2>
 
           <p className="mt-3">
-            By accessing or using this website, you agree to these Terms of
-            Use. If you do not agree with these terms, please discontinue use
-            of the website.
+            By accessing or using this website, you agree to be bound by these
+            Terms of Use. If you do not agree with any portion of these terms,
+            please discontinue use of this website.
           </p>
         </section>
 
@@ -39,8 +39,8 @@ export default function TermsPage() {
           <p className="mt-3">
             This website serves as the personal software engineering portfolio
             of Chandler Pruett. Its purpose is to present professional
-            experience, technical skills, software projects, and other
-            information related to career development.
+            experience, technical skills, software engineering projects,
+            educational work, and other career-related information.
           </p>
         </section>
 
@@ -50,58 +50,76 @@ export default function TermsPage() {
           </h2>
 
           <p className="mt-3">
-            Unless otherwise stated, the original content on this website,
-            including written material, project descriptions, graphics,
-            branding, and source code created by Chandler Pruett, is protected
-            by applicable intellectual property laws.
+            Unless otherwise indicated, all original content on this website,
+            including written material, project documentation, graphics,
+            branding, designs, and software created by Chandler Pruett, is
+            protected under applicable intellectual property laws.
           </p>
 
           <p className="mt-3">
-            You may view this website for personal, educational, or
-            informational purposes. You may not reproduce, redistribute,
-            modify, or commercially exploit original content without prior
-            written permission unless otherwise permitted by an applicable
-            open-source license.
+            You may view, reference, and share this website for personal,
+            educational, or professional purposes. You may not reproduce,
+            redistribute, modify, or commercially exploit original content
+            without prior written permission unless otherwise permitted under an
+            applicable open-source license.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-white">
-            Open Source Projects
+            Open-Source Projects
           </h2>
 
           <p className="mt-3">
-            Certain software projects referenced on this website may be
-            available through public GitHub repositories and distributed under
-            their respective open-source licenses. Those licenses govern the use
-            of those projects.
+            Certain software projects featured on this website are available
+            through public GitHub repositories and may be distributed under
+            open-source licenses, including the MIT License or other applicable
+            licenses. The terms of those individual licenses govern the use,
+            modification, and distribution of those projects.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-white">
-            Third-Party Services
+            Third-Party Links
           </h2>
 
           <p className="mt-3">
-            This website contains links to third-party websites, including
-            GitHub, LinkedIn, and other external resources. These websites are
-            operated independently and are governed by their own terms and
-            privacy policies.
+            This website includes links to third-party websites and services,
+            including GitHub, LinkedIn, and other external resources. These
+            websites are operated independently and are governed by their own
+            terms, privacy policies, and practices. I am not responsible for
+            the content or operation of third-party websites.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-white">
-            Disclaimer
+            Trademarks
+          </h2>
+
+          <p className="mt-3">
+            All product names, company names, logos, service marks, and
+            trademarks referenced throughout this website remain the property of
+            their respective owners. Their inclusion is solely for
+            identification, educational, or portfolio purposes and does not
+            imply sponsorship, endorsement, or affiliation unless explicitly
+            stated.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-white">
+            Disclaimer of Warranties
           </h2>
 
           <p className="mt-3">
             This website and its contents are provided on an "as is" and "as
             available" basis without warranties of any kind, whether express or
-            implied. While reasonable efforts are made to maintain accurate and
-            current information, no guarantee is made regarding the
-            completeness, reliability, or accuracy of the content.
+            implied. While reasonable efforts are made to maintain accurate,
+            current, and reliable information, no guarantee is made regarding
+            the completeness, accuracy, availability, or reliability of the
+            information presented.
           </p>
         </section>
 
@@ -113,21 +131,21 @@ export default function TermsPage() {
           <p className="mt-3">
             To the fullest extent permitted by applicable law, Chandler Pruett
             shall not be liable for any direct, indirect, incidental,
-            consequential, or special damages arising from the use of, or
-            inability to use, this website or its contents.
+            consequential, exemplary, or special damages arising out of or
+            relating to the use of, or inability to use, this website or its
+            contents.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-white">
-            Trademarks
+            Governing Law
           </h2>
 
           <p className="mt-3">
-            All product names, company names, logos, and trademarks referenced
-            throughout this website remain the property of their respective
-            owners. Their appearance does not imply sponsorship, endorsement,
-            or affiliation unless explicitly stated.
+            These Terms of Use shall be governed by and construed in accordance
+            with the laws of the State of Florida, United States, without
+            regard to its conflict of law principles.
           </p>
         </section>
 
@@ -138,8 +156,10 @@ export default function TermsPage() {
 
           <p className="mt-3">
             These Terms of Use may be updated periodically to reflect changes
-            to the website or applicable laws. Continued use of the website
-            following any updates constitutes acceptance of the revised terms.
+            to this website, applicable laws, or operational practices.
+            Continued use of this website following any revision constitutes
+            acceptance of the updated Terms of Use. The Effective Date at the
+            top of this page indicates the most recent revision.
           </p>
         </section>
 
@@ -149,8 +169,8 @@ export default function TermsPage() {
           </h2>
 
           <p className="mt-3">
-            Questions regarding these Terms of Use may be directed through the
-            contact information provided elsewhere on this website or via my
+            Questions regarding these Terms of Use may be directed using the
+            contact information provided elsewhere on this website or through my
             LinkedIn profile.
           </p>
         </section>
