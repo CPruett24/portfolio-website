@@ -1,5 +1,6 @@
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
+
 import ProjectCard from "@/components/projects/ProjectCard";
 
 import { projects } from "@/data/projects";
@@ -7,16 +8,15 @@ import { projects } from "@/data/projects";
 export default function Projects() {
   const featured = projects.find((p) => p.slug === "jarvis");
 
-  const volunteerHub = projects.find(
-    (p) => p.slug === "volunteerhub"
-  );
+  const others = projects.filter((p) => p.slug !== "jarvis");
 
   return (
     <Section id="projects">
       <SectionHeading
         eyebrow="Featured Work"
         title="Engineering Projects"
-        subtitle="Testing Safari"
+
+        subtitle="A collection of software engineering projects showcasing artificial intelligence, backend architecture, semantic search, and full-stack application development."
       />
 
       {featured && (
@@ -28,13 +28,14 @@ export default function Projects() {
         </div>
       )}
 
-      {volunteerHub && (
-        <div className="mt-16">
+      <div className="mt-16 flex flex-col gap-8">
+        {others.map((project) => (
           <ProjectCard
-            project={volunteerHub}
+            key={project.slug}
+            project={project}
           />
-        </div>
-      )}
+        ))}
+      </div>
     </Section>
   );
 }
