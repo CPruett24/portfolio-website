@@ -23,10 +23,10 @@ export default function About() {
           </p>
 
           <p>
-            During my software engineering internship, I've gained experience
-            working in collaborative environments while continuing to build
-            personal projects that challenge me to learn new technologies and
-            improve my engineering skills.
+            During my internship, I've gained experience
+            working in collaborative environments to build and test assemblies, 
+            while also continuing to build personal projects that challenge me 
+            to learn new technologies and improve my engineering skills.
           </p>
 
           <p>
