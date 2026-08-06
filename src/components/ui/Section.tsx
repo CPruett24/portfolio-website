@@ -1,4 +1,5 @@
 import Container from "./Container";
+import FadeIn from "./FadeIn";
 
 type SectionProps = {
   id?: string;
@@ -15,7 +16,9 @@ export default function Section({
       className="py-28"
     >
       <Container>
-        {children}
+        <FadeIn>
+          {children}
+        </FadeIn>
       </Container>
     </section>
   );

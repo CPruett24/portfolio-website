@@ -7,19 +7,13 @@ type Props = {
 };
 
 export default function FadeIn({ children }: Props) {
-  /**
-   * Respects the user's operating system accessibility setting.
-   *
-   * If "Reduce Motion" is enabled, animations are disabled
-   * while preserving the final layout.
-   */
   const prefersReducedMotion = useReducedMotion();
 
   return (
     <motion.div
       initial={
         prefersReducedMotion
-          ? false
+          ? undefined
           : {
               opacity: 0,
               y: 40,
@@ -27,7 +21,7 @@ export default function FadeIn({ children }: Props) {
       }
       whileInView={
         prefersReducedMotion
-          ? {}
+          ? undefined
           : {
               opacity: 1,
               y: 0,
