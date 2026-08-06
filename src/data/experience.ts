@@ -30,9 +30,9 @@ export const experiences: Experience[] = [
       "Continued work in assembly and testing of industrial computer systems as well as learned the use of software to troubleshoot and diagnose issues.",
 
     technologies: [
-      "Python",
-      "Git",
-      "Software Engineering",
+      "Testing",
+      "Troubleshooting",
+      "Diagnosing",
       "Problem Solving"
     ]
   },
