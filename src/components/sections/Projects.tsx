@@ -19,14 +19,9 @@ export default function Projects() {
         subtitle="A collection of software engineering projects showcasing artificial intelligence, backend architecture, semantic search, and full-stack application development."
       />
 
-      {featured && (
-        <div className="mt-16">
-          <ProjectCard
-            project={featured}
-            featured
-          />
-        </div>
-      )}
+      <div className="mt-16 rounded-2xl bg-red-500 p-10 text-white">
+        TEST FEATURED PROJECT
+      </div>
 
       <div className="mt-16 grid gap-8 lg:grid-cols-2">
         {others.map((project) => (
