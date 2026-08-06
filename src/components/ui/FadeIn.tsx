@@ -9,27 +9,19 @@ type Props = {
 export default function FadeIn({ children }: Props) {
   const prefersReducedMotion = useReducedMotion();
 
+  if (prefersReducedMotion) {
+    return <>{children}</>;
+  }
+
   return (
     <motion.div
-      initial={
-        prefersReducedMotion
-          ? undefined
-          : {
-              opacity: 0,
-              y: 40,
-            }
-      }
-      whileInView={
-        prefersReducedMotion
-          ? undefined
-          : {
-              opacity: 1,
-              y: 0,
-            }
-      }
-      viewport={{
-        once: true,
-        amount: 0.2,
+      initial={{
+        opacity: 0,
+        y: 24,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
       }}
       transition={{
         duration: 0.6,
