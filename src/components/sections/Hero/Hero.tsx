@@ -5,7 +5,7 @@ import HeroContent from "./HeroContent";
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden">
+    <section className="relative overflow-hidden">
       <HeroBackground />
 
       <Container>

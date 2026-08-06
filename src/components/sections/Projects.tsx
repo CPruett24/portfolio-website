@@ -11,7 +11,10 @@ export default function Projects() {
   const others = projects.filter((p) => p.slug !== "jarvis");
 
   return (
-    <Section id="projects">
+    <section
+      id="projects"
+      className="relative z-50 bg-red-500 py-28"
+    >
       <SectionHeading
         eyebrow="Featured Work"
         title="Engineering Projects"
@@ -31,6 +34,6 @@ export default function Projects() {
           />
         ))}
       </div>
-    </Section>
+    </section>
   );
 }
