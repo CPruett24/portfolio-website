@@ -19,21 +19,21 @@ export default function HeroHighlights() {
   ];
 
   return (
-    <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-4">
+    <dl className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-4">
       {stats.map((stat) => (
         <div
           key={stat.label}
           className="rounded-2xl border border-white/10 bg-slate-900/60 p-5 text-center backdrop-blur-xl"
         >
-          <p className="text-3xl font-black text-cyan-400">
-            {stat.value}
-          </p>
-
-          <p className="mt-2 text-sm text-slate-400">
+          <dt className="mt-2 text-sm font-medium text-slate-400">
             {stat.label}
-          </p>
+          </dt>
+
+          <dd className="mt-2 text-3xl font-black text-cyan-400">
+            {stat.value}
+          </dd>
         </div>
       ))}
-    </div>
+    </dl>
   );
 }

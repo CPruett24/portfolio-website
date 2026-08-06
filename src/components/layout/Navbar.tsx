@@ -81,10 +81,10 @@ export default function Navbar() {
             <a
               href={siteConfig.resume}
               download
-              aria-label="Download resume as PDF"
-              className={`rounded-lg bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400 ${focusClasses}`}
+              aria-label="Download Chandler Pruett's resume as a PDF"
+              className={`rounded-lg bg-cyan-500 px-3 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400 ${focusClasses}`}
             >
-              Resume
+              Download Resume (PDF)
             </a>
           </div>
 
@@ -94,10 +94,10 @@ export default function Navbar() {
             <a
               href={siteConfig.resume}
               download
-              aria-label="Download resume as PDF"
-              className={`rounded-lg bg-cyan-500 px-3 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400 ${focusClasses}`}
+              aria-label="Download Chandler Pruett's resume as a PDF"
+              className={`rounded-lg bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400 ${focusClasses}`}
             >
-              Resume
+              Download Resume (PDF)
             </a>
 
             <button

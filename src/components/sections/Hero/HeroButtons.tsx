@@ -22,8 +22,9 @@ export default function HeroButtons() {
         href="/resume.pdf"
         download
         className={clsx(secondary)}
+        aria-label="Download Chandler Pruett's resume as a PDF"
       >
-        Download Resume
+        Download Resume (PDF)
       </a>
 
     </div>
