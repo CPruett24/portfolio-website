@@ -65,7 +65,7 @@ export default function ProjectCard({
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
 
             <div className="rounded-2xl border border-white/10 bg-slate-800/40 p-5">
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
                 Project Type
               </p>
 
@@ -75,7 +75,7 @@ export default function ProjectCard({
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-slate-800/40 p-5">
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
                 Status
               </p>
 
@@ -85,7 +85,7 @@ export default function ProjectCard({
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-slate-800/40 p-5">
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
                 Primary Role
               </p>
 
@@ -95,7 +95,7 @@ export default function ProjectCard({
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-slate-800/40 p-5">
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
                 Focus
               </p>
 

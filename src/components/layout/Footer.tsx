@@ -17,7 +17,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Chandler Pruett. All rights reserved.
           </small>
 
-          <p className="max-w-md text-xs leading-5 text-slate-500">
+          <p className="max-w-md text-xs leading-5 text-slate-400">
             All product names, company names, trademarks, and registered
             trademarks referenced throughout this portfolio remain the property
             of their respective owners and are used for identification purposes

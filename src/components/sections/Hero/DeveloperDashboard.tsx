@@ -48,7 +48,7 @@ export default function DeveloperDashboard() {
 
           <div>
 
-            <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
+            <p className="text-xs uppercase tracking-[0.35em] text-slate-400">
               Primary Focus
             </p>
 
@@ -76,7 +76,7 @@ export default function DeveloperDashboard() {
 
           <div>
 
-            <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
+            <p className="text-xs uppercase tracking-[0.35em] text-slate-400">
               Flagship Project
             </p>
 
@@ -100,7 +100,7 @@ export default function DeveloperDashboard() {
 
           <div className="hidden lg:block">
 
-            <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
+            <p className="text-xs uppercase tracking-[0.35em] text-slate-400">
               Core Technologies
             </p>
 
@@ -130,7 +130,7 @@ export default function DeveloperDashboard() {
 
           <div className="hidden lg:block">
 
-            <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
+            <p className="text-xs uppercase tracking-[0.35em] text-slate-400">
               Availability
             </p>
 

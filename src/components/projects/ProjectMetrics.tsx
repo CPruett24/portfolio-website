@@ -14,7 +14,7 @@ export default function ProjectMetrics({
           key={metric.label}
           className="rounded-2xl border border-white/10 bg-slate-900/60 p-6 text-center backdrop-blur-xl transition hover:border-cyan-500/40"
         >
-          <p className="text-sm uppercase tracking-wider text-slate-500">
+          <p className="text-sm uppercase tracking-wider text-slate-400">
             {metric.label}
           </p>
 

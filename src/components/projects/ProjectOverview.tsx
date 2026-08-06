@@ -19,7 +19,7 @@ export default function ProjectOverview({
       <div className="mt-8 grid gap-8 md:grid-cols-2">
 
         <div>
-          <p className="text-sm uppercase tracking-wider text-slate-500">
+          <p className="text-sm uppercase tracking-wider text-slate-400">
             Project Type
           </p>
 
@@ -29,7 +29,7 @@ export default function ProjectOverview({
         </div>
 
         <div>
-          <p className="text-sm uppercase tracking-wider text-slate-500">
+          <p className="text-sm uppercase tracking-wider text-slate-400">
             Role
           </p>
 
@@ -39,7 +39,7 @@ export default function ProjectOverview({
         </div>
 
         <div>
-          <p className="text-sm uppercase tracking-wider text-slate-500">
+          <p className="text-sm uppercase tracking-wider text-slate-400">
             Status
           </p>
 
@@ -49,7 +49,7 @@ export default function ProjectOverview({
         </div>
 
         <div>
-          <p className="text-sm uppercase tracking-wider text-slate-500">
+          <p className="text-sm uppercase tracking-wider text-slate-400">
             Repository
           </p>
 

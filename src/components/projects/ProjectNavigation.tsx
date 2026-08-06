@@ -50,7 +50,7 @@ const sections = [
 export default function ProjectNavigation() {
   return (
     <aside className="sticky top-32 hidden h-fit lg:block">
-      <h3 className="mb-6 text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
+      <h3 className="mb-6 text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
         On This Page
       </h3>
 
