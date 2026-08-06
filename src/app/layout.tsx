@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+
 import StructuredData from "@/components/seo/StructuredData";
 
 const geistSans = Geist({
@@ -15,6 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chandlerpruett.com"),
+
+  applicationName: "Chandler Pruett Portfolio",
 
   title: {
     default: "Chandler Pruett | Software Engineer",
@@ -36,6 +40,8 @@ export const metadata: Metadata = {
     "Backend Development",
     "Flask",
     "SQL",
+    "Software Architecture",
+    "AI",
     "JARVIS",
     "Portfolio",
   ],
@@ -49,8 +55,20 @@ export const metadata: Metadata = {
 
   creator: "Chandler Pruett",
 
+  publisher: "Chandler Pruett",
+
+  category: "Technology",
+
+  classification: "Software Engineering Portfolio",
+
   alternates: {
     canonical: "/",
+  },
+
+  formatDetection: {
+    telephone: false,
+    address: false,
+    email: false,
   },
 
   openGraph: {
@@ -98,6 +116,31 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+
+    apple: "/apple-touch-icon.png",
+
+    shortcut: "/favicon.ico",
+  },
+
+  manifest: "/site.webmanifest",
+
+  appleWebApp: {
+    capable: true,
+    title: "Chandler Pruett",
+    statusBarStyle: "default",
+  },
+
+  verification: {
+    google: "81Roh30rapjwkhY-gT9YTuiiWpGY1qpiS5ezkD_vIME",
+    // Add Bing verification here later if desired.
+  },
 };
 
 export default function RootLayout({
@@ -111,7 +154,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-
+        {/* Skip link for keyboard users */}
         <a
           href="#main-content"
           className="
@@ -138,7 +181,6 @@ export default function RootLayout({
         <StructuredData />
 
         {children}
-
       </body>
     </html>
   );
