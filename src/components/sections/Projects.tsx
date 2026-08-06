@@ -7,8 +7,8 @@ import { projects } from "@/data/projects";
 export default function Projects() {
   const featured = projects.find((p) => p.slug === "jarvis");
 
-  const firstProject = projects.find(
-    (p) => p.slug !== "jarvis"
+  const volunteerHub = projects.find(
+    (p) => p.slug === "volunteerhub"
   );
 
   return (
@@ -28,10 +28,10 @@ export default function Projects() {
         </div>
       )}
 
-      {firstProject && (
+      {volunteerHub && (
         <div className="mt-16">
           <ProjectCard
-            project={firstProject}
+            project={volunteerHub}
           />
         </div>
       )}
