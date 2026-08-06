@@ -28,7 +28,7 @@ export default function Projects() {
         </div>
       )}
 
-      <div className="mt-16 flex flex-col gap-8">
+      <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
         {others.map((project) => (
           <ProjectCard
             key={project.slug}
