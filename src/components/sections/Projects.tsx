@@ -7,6 +7,10 @@ import { projects } from "@/data/projects";
 export default function Projects() {
   const featured = projects.find((p) => p.slug === "jarvis");
 
+  const firstProject = projects.find(
+    (p) => p.slug !== "jarvis"
+  );
+
   return (
     <Section id="projects">
       <SectionHeading
@@ -20,6 +24,14 @@ export default function Projects() {
           <ProjectCard
             project={featured}
             featured
+          />
+        </div>
+      )}
+
+      {firstProject && (
+        <div className="mt-16">
+          <ProjectCard
+            project={firstProject}
           />
         </div>
       )}
