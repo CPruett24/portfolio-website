@@ -25,17 +25,21 @@ export default function ProjectCard({
       }
     >
       <ProjectImage
-          src={project.image}
-          alt={`Screenshot of the ${project.title} project`}
+        src={project.image}
+        alt={`Screenshot of the ${project.title} project`}
       />
 
       <div className={featured ? "" : "mt-6"}>
+
+        {/* Featured Label */}
 
         {featured && (
           <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-400">
             ⭐ Flagship Project
           </div>
         )}
+
+        {/* Project Title */}
 
         <h3
           className={
@@ -47,6 +51,8 @@ export default function ProjectCard({
           {project.title}
         </h3>
 
+        {/* Tagline */}
+
         <p
           className={
             featured
@@ -57,9 +63,44 @@ export default function ProjectCard({
           {project.tagline}
         </p>
 
-        <p className="mt-8 leading-8 text-slate-400">
+        {/* Project Metadata */}
+
+        <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-slate-400">
+          <span>{project.projectType}</span>
+
+          <span className="text-slate-600">•</span>
+
+          <span>{project.role}</span>
+
+          <span className="text-slate-600">•</span>
+
+          <span className="inline-flex items-center gap-2">
+            <span
+              className={`h-2 w-2 rounded-full ${
+                project.status === "Active Development"
+                  ? "bg-emerald-400"
+                  : "bg-slate-500"
+              }`}
+              aria-hidden="true"
+            />
+
+            {project.status}
+          </span>
+        </div>
+
+        {/* Description */}
+
+        <p
+          className={
+            featured
+              ? "mt-8 leading-8 text-slate-400"
+              : "mt-6 leading-7 text-slate-400"
+          }
+        >
           {project.shortDescription}
         </p>
+
+        {/* Featured Project Details */}
 
         {featured && (
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -107,13 +148,17 @@ export default function ProjectCard({
           </div>
         )}
 
-        <div className="mt-10 flex flex-wrap gap-3">
+        {/* Technologies */}
+
+        <div className="mt-8 flex flex-wrap gap-3">
           {project.technologies.map((tech) => (
             <Badge key={tech}>
               {tech}
             </Badge>
           ))}
         </div>
+
+        {/* Featured Project Explanation */}
 
         {featured && (
           <div className="mt-10 rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-6">
@@ -123,17 +168,15 @@ export default function ProjectCard({
             </p>
 
             <p className="mt-4 leading-8 text-slate-300">
-              JARVIS represents my long-term software engineering project
-              focused on building a modular AI assistant capable of voice
-              interaction, persistent memory, intelligent automation, and
-              future multimodal capabilities. Every new feature is designed
-              with scalability and maintainability in mind.
+              {project.problem}
             </p>
 
           </div>
         )}
 
-        <div className="mt-12 flex flex-wrap items-center gap-5">
+        {/* Actions */}
+
+        <div className="mt-10 flex flex-wrap items-center gap-5">
 
           <Link
             href={`/projects/${project.slug}`}
@@ -145,6 +188,7 @@ export default function ProjectCard({
           <Link
             href={project.github}
             target="_blank"
+            rel="noopener noreferrer"
             className="font-semibold text-slate-300 transition hover:text-cyan-400"
           >
             View GitHub →
