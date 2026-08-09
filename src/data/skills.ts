@@ -7,74 +7,92 @@ export type SkillCategory = {
 export const skillCategories: SkillCategory[] = [
   {
     title: "Backend Development",
-    description: "Building scalable APIs, application logic, and software architecture.",
+
+    description:
+      "Building scalable APIs, application logic, and software architecture.",
+
     skills: [
       "Python",
       "Flask",
       "REST APIs",
       "SQLAlchemy",
-      "SQLite",
-      "Java"
-    ]
+      "SQL",
+      "Java",
+    ],
   },
 
   {
     title: "Artificial Intelligence",
-    description: "Developing AI-powered applications using local and cloud technologies.",
+
+    description:
+      "Developing AI-powered applications using local and cloud technologies.",
+
     skills: [
       "Machine Learning",
       "Deep Learning",
-      "Ollama",
-      "Prompt Engineering",
+      "AI Applications",
       "Vector Search",
-      "FAISS"
-    ]
+      "FAISS",
+      "Ollama",
+    ],
   },
 
   {
     title: "Frontend Development",
-    description: "Creating responsive user interfaces using modern web technologies.",
+
+    description:
+      "Creating responsive user interfaces using modern web technologies.",
+
     skills: [
       "Next.js",
       "React",
       "TypeScript",
       "HTML",
       "CSS",
-      "Tailwind CSS"
-    ]
+      "Tailwind CSS",
+    ],
   },
 
   {
     title: "Databases",
-    description: "Designing and managing relational databases.",
+
+    description:
+      "Designing and managing relational databases.",
+
     skills: [
-      "SQLite",
       "SQL",
-      "Database Design"
-    ]
+      "Database Design",
+      "SQLite",
+    ],
   },
 
   {
     title: "Developer Tools",
-    description: "Tools used throughout the software development lifecycle.",
+
+    description:
+      "Tools and platforms used for development, version control, testing, and application development.",
+
     skills: [
       "Git",
       "GitHub",
       "VS Code",
       "Streamlit",
-      "Linux"
-    ]
+      "Linux",
+    ],
   },
 
   {
     title: "Currently Learning",
-    description: "Areas I'm actively expanding through coursework and projects.",
+
+    description:
+      "Technologies and engineering practices I'm actively developing through coursework and projects.",
+
     skills: [
       "Cloud Computing",
       "AWS",
       "Docker",
       "CI/CD",
-      "Cybersecurity"
-    ]
-  }
+      "Cybersecurity",
+    ],
+  },
 ];

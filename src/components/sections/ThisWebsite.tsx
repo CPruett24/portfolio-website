@@ -21,7 +21,7 @@ const engineeringHighlights = [
   {
     title: "Performance",
     description:
-      "Optimized for fast loading and efficient rendering, with Lighthouse testing used to identify and improve performance bottlenecks.",
+      "Optimized for fast loading and efficient rendering, with Lighthouse testing used to identify JavaScript, rendering, and network performance bottlenecks.",
   },
   {
     title: "Accessibility",
@@ -67,7 +67,7 @@ export default function ThisWebsite() {
             projects, I built it as a real software system. The architecture
             emphasizes reusable components, maintainable data structures,
             responsive interfaces, accessibility, search optimization, and
-            security-conscious deployment practices.
+            security-conscious web configuration.
           </p>
         </Card>
       </div>

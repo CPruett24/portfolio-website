@@ -12,13 +12,13 @@ export const experiences: Experience[] = [
     title: "Assembler",
     company: "Contec, Inc.",
     description:
-      "Assembled and tested industrial computer systems while following detailed manufacturing procedures, quality standards, and documentation.",
+      "Assembled, tested, and inspected industrial computer systems while following engineering documentation, bills of materials, quality procedures, and manufacturing standards. Verified hardware configurations, identified discrepancies, and documented issues for resolution.",
 
     technologies: [
       "Hardware Assembly",
-      "Quality Control",
-      "Manufacturing",
-      "Documentation"
+      "Hardware Verification",
+      "Quality Assurance",
+      "Technical Documentation"
     ]
   },
 
@@ -27,13 +27,13 @@ export const experiences: Experience[] = [
     title: "Summer Intern",
     company: "Contec, Inc.",
     description:
-      "Continued work in assembly and testing of industrial computer systems as well as learned the use of software to troubleshoot and diagnose issues.",
+      "Performed assembly, testing, and quality verification of industrial computer systems while using diagnostic software and testing equipment to troubleshoot hardware issues. Worked within controlled ESD environments and followed technical documentation and established quality procedures.",
 
     technologies: [
-      "Testing",
+      "Hardware Testing",
       "Troubleshooting",
-      "Diagnosing",
-      "Problem Solving"
+      "Diagnostic Software",
+      "ESD Procedures"
     ]
   },
 
@@ -43,10 +43,10 @@ export const experiences: Experience[] = [
     company: "University",
 
     description:
-      "Completing a Computer Science degree while focusing on artificial intelligence, backend development, algorithms, databases, and software architecture.",
+      "Pursuing a Computer Science degree with coursework spanning artificial intelligence, machine learning, algorithms, databases, cybersecurity, software engineering, and software architecture.",
 
     technologies: [
-      "AI",
+      "Artificial Intelligence",
       "Machine Learning",
       "Algorithms",
       "Databases"

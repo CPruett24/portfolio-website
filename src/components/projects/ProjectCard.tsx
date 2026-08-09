@@ -100,54 +100,6 @@ export default function ProjectCard({
           {project.shortDescription}
         </p>
 
-        {/* Featured Project Details */}
-
-        {featured && (
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
-
-            <div className="rounded-2xl border border-white/10 bg-slate-800/40 p-5">
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
-                Project Type
-              </p>
-
-              <p className="mt-3 font-semibold">
-                {project.projectType}
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-slate-800/40 p-5">
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
-                Status
-              </p>
-
-              <p className="mt-3 font-semibold text-emerald-400">
-                {project.status}
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-slate-800/40 p-5">
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
-                Primary Role
-              </p>
-
-              <p className="mt-3 font-semibold">
-                {project.role}
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-slate-800/40 p-5">
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
-                Focus
-              </p>
-
-              <p className="mt-3 font-semibold">
-                Artificial Intelligence
-              </p>
-            </div>
-
-          </div>
-        )}
-
         {/* Technologies */}
 
         <div className="mt-8 flex flex-wrap gap-3">
@@ -157,22 +109,6 @@ export default function ProjectCard({
             </Badge>
           ))}
         </div>
-
-        {/* Featured Project Explanation */}
-
-        {featured && (
-          <div className="mt-10 rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-6">
-
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-              Why This Project Matters
-            </p>
-
-            <p className="mt-4 leading-8 text-slate-300">
-              {project.problem}
-            </p>
-
-          </div>
-        )}
 
         {/* Actions */}
 

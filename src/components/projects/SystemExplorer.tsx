@@ -31,7 +31,9 @@ export default function ArchitectureExplorer({
           >
 
             <button
+              type="button"
               onClick={() => setSelected(node)}
+              aria-pressed={selected.title === node.title}
               className={`
                 w-full
                 max-w-md
@@ -78,10 +80,10 @@ export default function ArchitectureExplorer({
       <div className="sticky top-28 h-fit rounded-3xl border border-white/10 bg-slate-900/60 p-8 backdrop-blur-xl">
 
         <p className="text-sm uppercase tracking-[0.3em] text-cyan-400">
-          Selected Component
+          Component Details
         </p>
 
-        <h2 className="mt-3 text-3xl font-bold">
+        <h2>
           {selected.title}
         </h2>
 

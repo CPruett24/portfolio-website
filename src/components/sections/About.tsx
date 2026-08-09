@@ -15,24 +15,27 @@ export default function About() {
         <div className="space-y-6 text-lg leading-8 text-slate-400">
 
           <p>
-            I'm a Computer Science student with a passion for designing
-            intelligent software that solves real-world problems. Whether
-            I'm developing AI assistants, backend APIs, or machine learning
-            applications, I enjoy learning how complex systems work and
-            turning ideas into reliable software.
+            I'm a Computer Science student focused on building intelligent
+            software that solves real-world problems. My work spans AI
+            assistants, backend APIs, machine learning applications, and
+            full-stack systems, with an emphasis on understanding how the
+            pieces fit together and turning ideas into reliable software.
           </p>
 
           <p>
-            During my internship, I've gained experience
-            working in collaborative environments to build and test assemblies, 
-            while also continuing to build personal projects that challenge me 
-            to learn new technologies and improve my engineering skills.
+            My professional experience has given me exposure to structured
+            engineering environments, quality-focused workflows, technical
+            documentation, and collaborative problem solving. Alongside that
+            experience, I've continued building software projects that
+            challenge me to apply what I've learned and develop stronger
+            engineering skills.
           </p>
 
           <p>
-            My long-term goal is to build scalable software that combines
-            artificial intelligence with practical applications that improve
-            people's everyday lives.
+            I'm especially interested in the intersection of artificial
+            intelligence, software architecture, and automation — building
+            systems that are not only technically interesting, but useful,
+            maintainable, and capable of evolving over time.
           </p>
 
         </div>
@@ -44,7 +47,6 @@ export default function About() {
           </h3>
 
           <ul className="mt-6 space-y-4 text-slate-300">
-
             <li>• Artificial Intelligence</li>
 
             <li>• Backend Development</li>
@@ -55,8 +57,8 @@ export default function About() {
 
             <li>• Software Architecture</li>
 
-            <li>• Cloud Technologies</li>
-
+            <li>• Intelligent Automation</li>
+            
           </ul>
 
         </div>

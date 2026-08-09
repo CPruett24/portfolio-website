@@ -6,7 +6,7 @@ export const projects: Project[] = [
 
     title: "JARVIS",
 
-    tagline: "Local AI Assistant with Voice Interaction, Long-Term Memory, and Intelligent Automation",
+    tagline: "Modular Local AI Assistant with Voice Interaction, Persistent Memory, and Extensible Architecture",
 
     projectType: "Personal Project",
 
@@ -312,28 +312,28 @@ export const projects: Project[] = [
       "Designing scalable command routing",
       "Maintaining long-term conversational memory",
       "Integrating local language models efficiently",
-      "Building an architecture capable of supporting future AI capabilities"
+      "Designing modular interfaces that allow new AI capabilities to be added without tightly coupling them to the existing assistant."
     ],
 
     lessonsLearned: [
-      "Modular software architecture dramatically simplifies future expansion.",
+      "Modular architecture makes it easier to expand the system without requiring major changes to existing components.",
       "Separating routing, memory, and AI services reduces long-term technical debt.",
       "Local language models require different optimization strategies than cloud APIs.",
       "Iterative development produces cleaner software than attempting to design every feature upfront."
     ],
 
     futureWork: [
-      "Desktop automation",
-      "Computer vision through connected cameras",
-      "Email management and automation",
-      "Calendar scheduling and reminders",
-      "Home server integration",
-      "Multi-agent AI architecture",
-      "Natural language workflow automation",
-      "Cross-device synchronization"
+      "Desktop automation — allow JARVIS to execute controlled actions across the local operating system.",
+      "Computer vision — connect cameras to enable object recognition and workspace awareness.",
+      "Email automation — retrieve, summarize, categorize, and assist with email workflows.",
+      "Calendar integration — manage events, scheduling, reminders, and time-based workflows.",
+      "Home server integration — extend JARVIS beyond the local workstation to connected services and infrastructure.",
+      "Multi-agent architecture — allow specialized AI agents to collaborate on complex tasks.",
+      "Natural-language workflows — translate conversational requests into multi-step automated processes.",
+      "Cross-device synchronization — maintain consistent memory, preferences, and workflows across supported devices."
     ],
 
-    github: "https://github.com/CPruett24/jarvis-ai-assistant",
+    github: "https://github.com/CPruett24/jarvis-ai-platform",
 
     image: "/images/projects/jarvis.png",
 
@@ -345,7 +345,7 @@ export const projects: Project[] = [
 
     title: "Vehicle AI Diagnostic",
 
-    tagline: "AI-Powered Vehicle Diagnostic Assistant Using Hybrid Semantic Search",
+    tagline: "AI-Powered Vehicle Diagnostics Using Hybrid Semantic Search",
 
     projectType: "Personal Project",
 
@@ -652,7 +652,7 @@ export const projects: Project[] = [
 
     image: "/images/projects/vehicle-ai.png",
 
-    featured: true
+    featured: false
   },
 
     {
@@ -968,10 +968,10 @@ export const projects: Project[] = [
       "Support cloud deployment"
     ],
 
-    github: "#",
+    github: "https://github.com/j-bridge/volunteerhub.com",
 
     image: "/images/projects/volunteerhub.png",
 
-    featured: true
+    featured: false
   }
 ];
