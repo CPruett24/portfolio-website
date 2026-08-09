@@ -28,25 +28,25 @@ export default function HeroContent() {
         </h1>
 
         <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-400 sm:text-xl sm:leading-9">
-          I build intelligent software that combines artificial intelligence,
-          scalable backend systems, and clean software architecture.
+          I build AI-powered software and backend systems with a focus on
+          practical problem solving, scalable architecture, and intelligent
+          automation.
 
           <br />
           <br />
 
-          My projects focus on solving real-world problems through local AI,
-          semantic search, modern web applications, and thoughtful engineering.
+          My work spans local AI, semantic search, REST APIs, databases,
+          modern web applications, and machine learning — with projects
+          designed to solve real-world problems rather than simply
+          demonstrate technology.
 
           <br />
           <br />
 
           Currently building{" "}
-          <span className="font-semibold text-white">
-            JARVIS
-          </span>
-          , a modular AI assistant exploring voice interaction,
-          persistent memory, intelligent automation,
-          and future computer vision.
+          <span className="font-semibold text-white">JARVIS</span>, a modular
+          personal AI platform exploring voice interaction, persistent memory,
+          intelligent automation, and multimodal capabilities.
         </p>
 
         <div className="mt-8">

@@ -1,20 +1,20 @@
 export default function HeroHighlights() {
   const stats = [
     {
-      value: "3+",
-      label: "Major Projects",
+      value: "4",
+      label: "Engineering Projects",
     },
     {
       value: "50K+",
       label: "Vehicle Knowledge Base",
     },
     {
-      value: "4+",
-      label: "Core Languages",
+      value: "3+",
+      label: "Application Domains",
     },
     {
       value: "AI",
-      label: "Focused Development",
+      label: "Engineering Focus",
     },
   ];
 

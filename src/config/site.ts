@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Chandler Pruett",
 
-  title: "Software Engineer | AI Developer",
+  title: "Software Engineer • AI • Backend • Full-Stack",
 
   description:
     "Computer Science student passionate about AI, backend engineering, and building scalable software.",
