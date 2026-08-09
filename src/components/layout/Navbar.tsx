@@ -7,8 +7,8 @@ import { Menu, X } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 const links = [
-  { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
+  { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
