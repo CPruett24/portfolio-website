@@ -8,6 +8,7 @@ import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
+import ThisWebsite from "@/components/sections/ThisWebsite";
 
 import Footer from "@/components/layout/Footer";
 
@@ -24,6 +25,8 @@ export default function Home() {
         <Hero />
 
         <Projects />
+
+        <ThisWebsite />
 
         <About />
 
