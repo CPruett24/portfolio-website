@@ -1,4 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
+import BackToTop from "@/components/layout/BackToTop";
 
 import Hero from "@/components/sections/Hero/Hero";
 
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-
+      
       <main
         id="main-content"
         tabIndex={-1}
@@ -32,6 +33,8 @@ export default function Home() {
 
         <Contact />
       </main>
+
+      <BackToTop />
 
       <Footer />
     </>
