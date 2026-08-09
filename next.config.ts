@@ -82,11 +82,8 @@ const securityHeaders = [
   /**
    * Content Security Policy.
    *
-   * NOTE:
-   * We intentionally keep the current script policy until
-   * we perform dedicated production testing. Removing
-   * 'unsafe-eval' prematurely could break future framework
-   * behavior or third-party integrations.
+   * Restricts where scripts, styles, images, fonts, and connections
+   * can be loaded from.
    */
   {
     key: "Content-Security-Policy",
@@ -99,7 +96,7 @@ const securityHeaders = [
       img-src 'self' data: blob:;
       font-src 'self' data:;
       style-src 'self' 'unsafe-inline';
-      script-src 'self' 'unsafe-inline' 'unsafe-eval';
+      script-src 'self' 'unsafe-inline';
       connect-src 'self';
       upgrade-insecure-requests;
     `
