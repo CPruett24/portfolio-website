@@ -39,6 +39,13 @@ export default function Footer() {
           </Link>
 
           <Link
+            href="/accessibility"
+            className={`transition hover:text-cyan-400 ${focusClasses}`}
+          >
+            Accessibility
+          </Link>
+
+          <Link
             href="/terms"
             className={`transition hover:text-cyan-400 ${focusClasses}`}
           >
