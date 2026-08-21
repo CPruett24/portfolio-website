@@ -78,6 +78,14 @@ export default function AccessibilityPage() {
           </p>
 
           <p className="mt-4">
+             Accessibility practices are informed by the Web Content Accessibility
+             Guidelines (WCAG), including Level AA considerations. These practices are
+             intended to support access for people with a range of disabilities; however,
+             this statement does not represent a formal legal certification or guarantee
+             of compliance with the Americans with Disabilities Act.
+          </p>
+
+          <p className="mt-4">
             Manual testing was also used to verify keyboard navigation, visible
             focus states, navigation controls, interactive elements, responsive
             layouts, and the overall usability of the site across different
